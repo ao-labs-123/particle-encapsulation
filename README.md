@@ -17,7 +17,7 @@ Instead of relying on probabilistic LLM approximations, this module ingests the 
 
 ```text
 [ log.json ] ──> [ Particle Encapsulation ] ──> [ particle.json ] ──> (Topological Mapping)
-
+```
 
 
 ## Core Data Model (⁠Particle⁠)
