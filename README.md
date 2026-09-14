@@ -1,4 +1,4 @@
 # Current Phase:Particle Encapsulation
 Deterministic engine that encapsulates structured context logs into algebraic particle objects.⁠
 
-<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/00b573da-60a6-419a-8b7c-9f5b480a91bc" />
+<img width="1460" height="1232" alt="image" src="https://github.com/user-attachments/assets/077659a5-8336-4fc0-bdd6-effd8c012748" />
