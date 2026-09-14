@@ -3,18 +3,34 @@ Deterministic engine that encapsulates structured context logs into algebraic pa
 
 <img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/10de3e8f-6ca9-45a6-b8f8-269ce818a3f5" />
 
+> **Stage 1 of the Cognitive OS Pipeline**  
+> Converts structured context logs (`log.json`) into algebraic particle objects (`particle.json`) deterministically.
+
+---
+
+## Overview
+
+This repository implements the **Particle Encapsulation** stage for the rule-based Cognitive OS. 
+Instead of relying on probabilistic LLM approximations, this module ingests the logical analysis logs generated from natural language inputs and packages them into discrete, structured **`Particle`** objects.
+
+### Pipeline Position
+
+```text
+[ log.json ] ──> [ Particle Encapsulation ] ──> [ particle.json ] ──> (Topological Mapping)
+
+
 
 ## Core Data Model (⁠Particle⁠)
 Each encapsulated concept or relation is structured as a ⁠Particle⁠ dataclass with the following attributes:
 
-```
- ⁠id⁠: Unique identifier (e.g., ⁠p_agent_f06dbc⁠)
- ⁠label⁠: Extracted text content (e.g., ⁠"I"⁠, ⁠"you helped"⁠, ⁠"i succeeded"⁠)
- ⁠type⁠: Entity classification (⁠Agent⁠, ⁠Cause⁠, ⁠Effect⁠, etc.)
- ⁠state⁠: Deterministic resolution state (⁠determined⁠ / ⁠unspecified⁠)
- ⁠constraints⁠: Logical rules applied during extraction
- ⁠properties⁠: Contextual properties and metadata
-```
+
+- ⁠id⁠: Unique identifier (e.g., ⁠p_agent_f06dbc⁠)
+- ⁠label⁠: Extracted text content (e.g., ⁠"I"⁠, ⁠"you helped"⁠, ⁠"i succeeded"⁠)
+- type⁠: Entity classification (⁠Agent⁠, ⁠Cause⁠, ⁠Effect⁠, etc.)
+- state⁠: Deterministic resolution state (⁠determined⁠ / ⁠unspecified⁠)
+- ⁠constraints⁠: Logical rules applied during extraction
+- ⁠properties⁠: Contextual properties and metadata
+
 
 ## Quick Start
 
