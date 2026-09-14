@@ -21,7 +21,10 @@ Quick Start
 **2. Execution**
 
 Run the main script to ingest ⁠log.json⁠ and generate ⁠particle.json⁠:
+```
  python main.py
+
+```
 
 **3. Output**
 
