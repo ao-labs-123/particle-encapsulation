@@ -5,7 +5,9 @@ import urllib.request
 from src.factory import ParticleFactory
 
 # テスト用の log.json の Raw URL
-URL = "https://raw.githubusercontent.com/ao-labs-123/input-parser/main/log.json"
+URL = "https://raw.githubusercontent.com/ao-labs-123/input-parser/main/data/log.json"
+
+
 
 def main():
     print("Fetching log.json from GitHub...")
