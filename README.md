@@ -13,16 +13,21 @@ Each encapsulated concept or relation is structured as a ⁠Particle⁠ dataclas
 - ⁠constraints⁠: Logical rules applied during extraction
 - ⁠properties⁠: Contextual properties and metadata
 Quick Start
+
 **1. Prerequisites**
+
 - Python 3.10+
+
 **2. Execution**
+
 Run the main script to ingest ⁠log.json⁠ and generate ⁠particle.json⁠:
  python main.py
 
 **3. Output**
+
 The engine will parse the input log and export the encapsulated particle cloud into ⁠particle.json⁠.
 
-```
+```particle.json
 [
   {
     "id": "p_agent_f06dbc",
@@ -41,3 +46,16 @@ The engine will parse the input log and export the encapsulated particle cloud i
 ```
 
 ## Repository Structure
+
+```repository
+
+particle-encapsulation/
+├── README.md               # Project documentation
+├── log.json                # Ingested context log
+├── particle.json           # Exported particle cloud output
+├── main.py                 # Execution script
+└── src/
+    ├── particle.py         # Particle data class definition
+    └── factory.py          # ParticleFactory parser and transformation logic
+
+```
