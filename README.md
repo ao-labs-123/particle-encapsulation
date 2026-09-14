@@ -5,7 +5,7 @@ Deterministic engine that encapsulates structured context logs into algebraic pa
 
 
 ## Stage 1 of the Cognitive OS Pipeline  
- Converts structured context logs (`log.json`) into algebraic particle objects (`particle.json`) deterministically.
+ Converts structured context logs ([log.json]https://github.com/ao-labs-123/particle-encapsulation/blob/main/log.json) into algebraic particle objects (particle.json[https://github.com/ao-labs-123/particle-encapsulation/blob/main/particles.json]) deterministically.
 
 ---
 
