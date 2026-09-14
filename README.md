@@ -21,7 +21,7 @@ Instead of relying on probabilistic LLM approximations, this module ingests the 
 
 
 ## Core Data Model (⁠Particle⁠)
-Each encapsulated concept or relation is structured as a **⁠`Particle⁠`** dataclass with the following attributes:
+Each encapsulated concept or relation is structured as a **`Particle⁠`** dataclass with the following attributes:
 
 
 - ⁠**`id⁠:`** Unique identifier (e.g., ⁠**`p_agent_f06dbc`⁠**)
