@@ -1,25 +1,31 @@
-# main.py
-
 import json
 import urllib.request
 from src.factory import ParticleFactory
 
 # テスト用の log.json の Raw URL
 URL = "https://raw.githubusercontent.com/ao-labs-123/input-parser/main/data/log.json"
-
+LOCAL_FILE = "log.json"  # 保存先のローカルファイル名
 
 
 def main():
     print("Fetching log.json from GitHub...")
+
+    # 1. GitHubからデータを取得
     with urllib.request.urlopen(URL) as response:
-        log_data = json.loads(response.read().decode())
-    
-    # log.json から粒子群を生成！
+        raw_data = response.read().decode("utf-8")
+        log_data = json.loads(raw_data)
+
+    # 2. ローカルの log.json にそのまま保存（反映）
+    with open(LOCAL_FILE, "w", encoding="utf-8") as f:
+        json.dump(log_data, f, ensure_ascii=False, indent=2)
+
+    print(f"Successfully saved to {LOCAL_FILE}!")
+
+    # 3. 粒子群の生成処理
     particles = ParticleFactory.from_log_json(log_data)
-    
     print(f"\n--- Generated Particle Cloud ({len(particles)} particles) ---")
-    for particle in particles:
-        print(particle)
+    for p in particles:
+        print(p)
 
 
 if __name__ == "__main__":
