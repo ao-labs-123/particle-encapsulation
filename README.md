@@ -12,7 +12,8 @@ Each encapsulated concept or relation is structured as a ⁠Particle⁠ dataclas
 - ⁠state⁠: Deterministic resolution state (⁠determined⁠ / ⁠unspecified⁠)
 - ⁠constraints⁠: Logical rules applied during extraction
 - ⁠properties⁠: Contextual properties and metadata
-Quick Start
+
+## Quick Start
 
 **1. Prerequisites**
 
