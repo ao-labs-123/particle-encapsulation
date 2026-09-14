@@ -14,10 +14,10 @@ Each encapsulated concept or relation is structured as a ⁠Particle⁠ dataclas
 - ⁠properties⁠: Contextual properties and metadata
 Quick Start
 1. Prerequisites
- Python 3.10+
+- Python 3.10+
 2. Execution
 Run the main script to ingest ⁠log.json⁠ and generate ⁠particle.json⁠:
-- python main.py
+ python main.py
 
 3. Output
 The engine will parse the input log and export the encapsulated particle cloud into ⁠particle.json⁠.
