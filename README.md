@@ -21,15 +21,15 @@ Instead of relying on probabilistic LLM approximations, this module ingests the 
 
 
 ## Core Data Model (⁠Particle⁠)
-Each encapsulated concept or relation is structured as a ⁠Particle⁠ dataclass with the following attributes:
+Each encapsulated concept or relation is structured as a **⁠`Particle⁠`** dataclass with the following attributes:
 
 
-- ⁠id⁠: Unique identifier (e.g., ⁠p_agent_f06dbc⁠)
-- ⁠label⁠: Extracted text content (e.g., ⁠"I"⁠, ⁠"you helped"⁠, ⁠"i succeeded"⁠)
-- type⁠: Entity classification (⁠Agent⁠, ⁠Cause⁠, ⁠Effect⁠, etc.)
-- state⁠: Deterministic resolution state (⁠determined⁠ / ⁠unspecified⁠)
-- ⁠constraints⁠: Logical rules applied during extraction
-- ⁠properties⁠: Contextual properties and metadata
+- ⁠**`id⁠:`** Unique identifier (e.g., ⁠**`p_agent_f06dbc`⁠**)
+- ⁠**`label⁠:`** Extracted text content (e.g., ⁠**`"I"⁠, ⁠"you helped"⁠, ⁠"i succeeded"⁠`**)
+- **`type⁠:`** Entity classification (**⁠`Agent⁠, ⁠Cause⁠, ⁠Effect⁠,`**etc.)
+- **`state⁠:`** Deterministic resolution state (**⁠`determined⁠`** / ⁠**`unspecified`⁠**)
+- ⁠**`constraints⁠:`** Logical rules applied during extraction
+- ⁠**`properties⁠:`** Contextual properties and metadata
 
 
 ## Quick Start
@@ -40,7 +40,7 @@ Each encapsulated concept or relation is structured as a ⁠Particle⁠ dataclas
 
 **2. Execution**
 
-Run the main script to ingest ⁠log.json⁠ and generate ⁠particle.json⁠:
+Run the main script to ingest ⁠**`log.json⁠`** and generate **⁠`particle.json⁠`**:
 ```
  python main.py
 
