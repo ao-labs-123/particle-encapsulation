@@ -1,0 +1,210 @@
+[
+  {
+    "id": "p_agent_9c0c75",
+    "label": "He",
+    "entity_type": "Agent",
+    "state": "determined",
+    "constraints": [
+      "Explicit Subject Present"
+    ],
+    "properties": {
+      "decision": "Priority: Explicit Subject"
+    }
+  },
+  {
+    "id": "p_agent_953246",
+    "label": "I",
+    "entity_type": "Agent",
+    "state": "determined",
+    "constraints": [
+      "Psychological Verb + Null Subject"
+    ],
+    "properties": {
+      "decision": "Default: Speaker"
+    }
+  },
+  {
+    "id": "p_agent_c1b61d",
+    "label": "He/She/They",
+    "entity_type": "Agent",
+    "state": "determined",
+    "constraints": [
+      "Psychological Verb + Null Subject + Evidential Marker"
+    ],
+    "properties": {
+      "decision": "Override: 3rd Party"
+    }
+  },
+  {
+    "id": "p_agent_6f4770",
+    "label": "you",
+    "entity_type": "Agent",
+    "state": "determined",
+    "constraints": [
+      "Formal Subject Detected (It ... that)"
+    ],
+    "properties": {
+      "decision": "Priority: True Subject in Clause"
+    }
+  },
+  {
+    "id": "p_agent_fb8249",
+    "label": "Unknown",
+    "entity_type": "Agent",
+    "state": "determined",
+    "constraints": [
+      "Standard"
+    ],
+    "properties": {
+      "decision": "None"
+    }
+  },
+  {
+    "id": "p_agent_0d4107",
+    "label": "Unknown",
+    "entity_type": "Agent",
+    "state": "determined",
+    "constraints": [
+      "Standard"
+    ],
+    "properties": {
+      "decision": "None"
+    }
+  },
+  {
+    "id": "p_agent_9222e2",
+    "label": "Unknown",
+    "entity_type": "Agent",
+    "state": "determined",
+    "constraints": [
+      "Standard"
+    ],
+    "properties": {
+      "decision": "None"
+    }
+  },
+  {
+    "id": "p_agent_111e94",
+    "label": "I",
+    "entity_type": "Agent",
+    "state": "determined",
+    "constraints": [
+      "Explicit Subject Present"
+    ],
+    "properties": {
+      "decision": "Priority: Explicit Subject"
+    }
+  },
+  {
+    "id": "p_cause_b9fe69",
+    "label": "the project",
+    "entity_type": "Cause",
+    "state": "determined",
+    "constraints": [
+      "Agent: I + Marker: due to"
+    ],
+    "properties": {}
+  },
+  {
+    "id": "p_effect_9c8d50",
+    "label": "i'm stressed",
+    "entity_type": "Effect",
+    "state": "determined",
+    "constraints": [
+      "Agent: I + Marker: due to"
+    ],
+    "properties": {}
+  },
+  {
+    "id": "p_agent_5c8dd1",
+    "label": "I",
+    "entity_type": "Agent",
+    "state": "determined",
+    "constraints": [
+      "Explicit Subject Present"
+    ],
+    "properties": {
+      "decision": "Priority: Explicit Subject"
+    }
+  },
+  {
+    "id": "p_cause_f2847d",
+    "label": "you helped",
+    "entity_type": "Cause",
+    "state": "determined",
+    "constraints": [
+      "Agent: I + Marker: because"
+    ],
+    "properties": {}
+  },
+  {
+    "id": "p_effect_6972eb",
+    "label": "i succeeded",
+    "entity_type": "Effect",
+    "state": "determined",
+    "constraints": [
+      "Agent: I + Marker: because"
+    ],
+    "properties": {}
+  },
+  {
+    "id": "p_agent_462fcf",
+    "label": "The report",
+    "entity_type": "Agent",
+    "state": "determined",
+    "constraints": [
+      "Explicit Subject Present"
+    ],
+    "properties": {
+      "decision": "Priority: Explicit Subject"
+    }
+  },
+  {
+    "id": "p_agent_8c8b8d",
+    "label": "The report",
+    "entity_type": "Agent",
+    "state": "determined",
+    "constraints": [
+      "Explicit Subject Present"
+    ],
+    "properties": {
+      "decision": "Priority: Explicit Subject"
+    }
+  },
+  {
+    "id": "p_agent_931cc4",
+    "label": "I",
+    "entity_type": "Agent",
+    "state": "determined",
+    "constraints": [
+      "Explicit Subject Present"
+    ],
+    "properties": {
+      "decision": "Priority: Explicit Subject"
+    }
+  },
+  {
+    "id": "p_agent_0ea562",
+    "label": "I",
+    "entity_type": "Agent",
+    "state": "determined",
+    "constraints": [
+      "Explicit Subject Present"
+    ],
+    "properties": {
+      "decision": "Priority: Explicit Subject"
+    }
+  },
+  {
+    "id": "p_agent_9f50a2",
+    "label": "I",
+    "entity_type": "Agent",
+    "state": "determined",
+    "constraints": [
+      "Explicit Subject Present"
+    ],
+    "properties": {
+      "decision": "Priority: Explicit Subject"
+    }
+  }
+]

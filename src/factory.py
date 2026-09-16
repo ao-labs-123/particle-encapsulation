@@ -17,8 +17,8 @@ class ParticleFactory:
             # 1. Agent (主語) 粒子の抽出 (Stage 1 / Stage 2 から)
             # -------------------------------------------------------------
         for item in log_data:
-            stage1 = item.get("stage1", {})
-            stage2 = item.get("stage2", {})
+            stage1 = item.get("stage1") or {}
+            stage2 = item.get("stage2") or {}
         
             # Stage 2 で解決された Agent があればそれを優先、無ければ Stage 1 を参照
             agent_label = stage2.get("resolved_agent") or stage1.get("agent")
@@ -38,8 +38,8 @@ class ParticleFactory:
             # -------------------------------------------------------------
             # 2. Stage 3 (因果関係: Cause / Effect) 粒子の抽出
             # -------------------------------------------------------------
-            stage3 = item.get("stage3")or{}
-            structure = stage3.get("structure")or{}
+            stage3 = item.get("stage3") or {}
+            structure = stage3.get("structure") or {}
 
             if isinstance(structure, dict):
                 # Cause (原因) 粒子の生成
@@ -54,16 +54,16 @@ class ParticleFactory:
                         )
                     )
             
-            # Effect (結果) 粒子の生成
-            if "effect" in structure:
-                particles.append(
-                    Particle(
-                        id=f"p_effect_{uuid.uuid4().hex[:6]}",
-                        label=structure["effect"],
-                        entity_type="Effect",
-                        state="determined",
-                        constraints=[stage3.get("process", "cause_effect_rule")]
+                # Effect (結果) 粒子の生成
+                if "effect" in structure:
+                    particles.append(
+                        Particle(
+                            id=f"p_effect_{uuid.uuid4().hex[:6]}",
+                            label=structure["effect"],
+                            entity_type="Effect",
+                            state="determined",
+                            constraints=[stage3.get("process", "cause_effect_rule")]
+                        )
                     )
-                )
 
         return particles
