@@ -1,5 +1,5 @@
 # Current Phase:Particle Encapsulation
-Deterministic engine that encapsulates structured context logs into algebraic particle objects.⁠
+**Deterministic engine that encapsulates structured context logs into algebraic particle objects.⁠**
 
 ## "ACT-R at a Micro-Scale"
 ### What makes this different from standard ACT-R?
