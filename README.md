@@ -3,7 +3,7 @@ Deterministic engine that encapsulates structured context logs into algebraic pa
 
 ## "ACT-R at a Micro-Scale"
 ### What makes this different from standard ACT-R?
-Standard ACT-R operates on a macro level with production rules. This project zooms into the micro-level of cognitive processing.
+**Standard ACT-R operates on a macro level with production rules. This project zooms into the micro-level of cognitive processing.**
 <img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/10de3e8f-6ca9-45a6-b8f8-269ce818a3f5" />
 
 
