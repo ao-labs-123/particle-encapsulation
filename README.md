@@ -20,7 +20,7 @@ Standard ACT-R operates on a macro level with production rules. This project zoo
 ## Overview
 
 This repository implements the **Particle Encapsulation** stage for the rule-based Cognitive OS. 
-Instead of relying on probabilistic LLM approximations, this module ingests the logical analysis logs generated from natural language inputs and packages them into discrete, structured **`Particle`** objects.
+This module ingests the logical analysis logs generated from natural language inputs and packages them into discrete, structured **`Particle`** objects.
 
 ### Pipeline Position
 
