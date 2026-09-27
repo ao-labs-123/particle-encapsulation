@@ -13,7 +13,7 @@ Standard ACT-R operates on a macro level with production rules. This project zoo
 
 
 ## Stage 1 of the Cognitive OS Pipeline  
- Converts structured context logs [`log.json`](https://github.com/ao-labs-123/particle-encapsulation/blob/main/data/log.json) into algebraic particle objects [`particle.json`](https://github.com/ao-labs-123/particle-encapsulation/blob/main/data/particles.json) deterministically.
+ Converts structured context logs [`log.json`](https://github.com/ao-labs-123/particle-encapsulation/blob/main/log.json) into algebraic particle objects [`particle.json`](https://github.com/ao-labs-123/particle-encapsulation/blob/main/particles.json) deterministically.
 
 ---
 
@@ -25,7 +25,7 @@ This module ingests the logical analysis logs generated from natural language in
 ### Pipeline Position
 
 ```text
-[ log.json ] ──> [ Particle Encapsulation ] ──> [ particle.json ] ──> (Topological Mapping)
+[ log.json ] ──> [ Particle Encapsulation ] ──> [ particles.json ] ──> (Topological Mapping)
 ```
 
 
@@ -50,17 +50,16 @@ Each encapsulated concept or relation is structured as a **`Particle⁠`** datac
 
 **2. Execution**
 
-Run the main script to ingest ⁠**`log.json⁠`** and generate **⁠`particle.json⁠`**:
+Run the standalone entry script from the project root to ingest ⁠**`log.json⁠`** and generate **⁠`particles.json⁠`**:
 ```
- python main.py
-
+python main.py
 ```
 
 **3. Output**
 
-The engine will parse the input log and export the encapsulated particle cloud into ⁠particle.json⁠.
+The engine will parse the input log and export the encapsulated particle cloud into ⁠particles.json⁠.
 
-```particle.json
+```particles.json
 [
   {
     "id": "p_agent_f06dbc",
@@ -85,8 +84,8 @@ The engine will parse the input log and export the encapsulated particle cloud i
 particle-encapsulation/
 ├── README.md               # Project documentation
 ├── log.json                # Ingested context log
-├── particle.json           # Exported particle cloud output
-├── main.py                 # Execution script
+├── particles.json          # Exported particle cloud output
+├── main.py                 # Standalone execution script
 └── src/
     ├── particle.py         # Particle data class definition
     └── factory.py          # ParticleFactory parser and transformation logic
