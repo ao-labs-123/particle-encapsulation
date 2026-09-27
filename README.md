@@ -13,7 +13,7 @@ Standard ACT-R operates on a macro level with production rules. This project zoo
 
 
 ## Stage 1 of the Cognitive OS Pipeline  
- Converts structured context logs [`log.json`](https://github.com/ao-labs-123/particle-encapsulation/blob/main/log.json) into algebraic particle objects [`particle.json`](https://github.com/ao-labs-123/particle-encapsulation/blob/main/particles.json) deterministically.
+ Converts structured context logs [`log.json`](https://github.com/ao-labs-123/particle-encapsulation/blob/main/log.json) into algebraic particle objects [`particle.json`](https://github.com/ao-labs-123/particle-encapsulation/blob/main/data/particles.json) deterministically.
 
 ---
 
