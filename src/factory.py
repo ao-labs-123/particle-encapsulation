@@ -66,4 +66,20 @@ class ParticleFactory:
                         )
                     )
 
+                relation = structure.get("relation")
+                if relation in {"Temporal", "Manner"} and structure.get("context"):
+                    particles.append(
+                        Particle(
+                            id=f"p_{relation.lower()}_{uuid.uuid4().hex[:6]}",
+                            label=structure["context"],
+                            entity_type=relation,
+                            state="determined",
+                            constraints=[stage3.get("process", "stage3_relation")],
+                            properties={
+                                "marker": structure.get("marker"),
+                                "event": structure.get("event")
+                            }
+                        )
+                    )
+
         return particles
