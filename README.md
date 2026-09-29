@@ -9,7 +9,7 @@ Standard ACT-R operates on a macro level with production rules. This project zoo
 # Current Phase:Particle Encapsulation
 **Deterministic engine that encapsulates structured context logs into algebraic particle objects.⁠**
 
-![alt text](image.jpeg)
+![alt text](image-1.jpeg)
 
 
 ## Stage 1 of the Cognitive OS Pipeline  
