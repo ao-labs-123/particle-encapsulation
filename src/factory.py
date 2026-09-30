@@ -82,4 +82,42 @@ class ParticleFactory:
                         )
                     )
 
+            # -------------------------------------------------------------
+            # 3. Stage 4 (関係節) 粒子の抽出
+            # -------------------------------------------------------------
+            stage4 = item.get("stage4") or {}
+            stage4_process = stage4.get("process")
+            if stage4_process and stage4_process != "Standard":
+                stage4_result = stage4.get("result") or stage4.get("structure")
+                particles.append(
+                    Particle(
+                        id=f"p_relative_clause_{uuid.uuid4().hex[:6]}",
+                        label=stage4_process,
+                        entity_type="RelativeClause",
+                        state="determined",
+                        constraints=[stage4_process],
+                        properties={
+                            "decision": stage4.get("decision"),
+                            "result": stage4_result
+                        }
+                    )
+                )
+
+            # -------------------------------------------------------------
+            # 4. Stage 5 (形態・カテゴリ) 粒子の抽出
+            # -------------------------------------------------------------
+            stage5 = item.get("stage5") or {}
+            morphology = stage5.get("process")
+            if morphology:
+                particles.append(
+                    Particle(
+                        id=f"p_morphology_{uuid.uuid4().hex[:6]}",
+                        label=morphology,
+                        entity_type="Morphology",
+                        state="determined",
+                        constraints=[morphology],
+                        properties={"result": stage5.get("result")}
+                    )
+                )
+
         return particles
