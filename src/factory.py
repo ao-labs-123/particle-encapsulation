@@ -61,14 +61,18 @@ class ParticleFactory:
                         )
                     )
             
-                # Effect (結果) 粒子の生成
-                if "effect" in structure:
+                # Cause/Effect と Temporal/Manner の event を結果粒子として生成
+                effect_label = structure.get("effect")
+                if effect_label is None and structure.get("relation") in {"Temporal", "Manner"}:
+                    effect_label = structure.get("event")
+
+                if effect_label:
                     effect_particle_id = f"p_effect_{uuid.uuid4().hex[:6]}"
                     structure["effect_particle_id"] = effect_particle_id
                     particles.append(
                         Particle(
                             id=effect_particle_id,
-                            label=structure["effect"],
+                            label=effect_label,
                             entity_type="Effect",
                             state="determined",
                             constraints=[stage3.get("process", "cause_effect_rule")]

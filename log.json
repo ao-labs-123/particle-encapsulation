@@ -400,7 +400,8 @@
         "marker": "by",
         "context": "working hard",
         "event": "He succeeded",
-        "agent_particle_id": "p_agent_925b02"
+        "agent_particle_id": "p_agent_925b02",
+        "effect_particle_id": "p_effect_7f3a91"
       }
     },
     "stage4": {
@@ -434,7 +435,8 @@
         "marker": "after",
         "context": "the long meeting",
         "event": "I was stressed",
-        "agent_particle_id": "p_agent_28500d"
+        "agent_particle_id": "p_agent_28500d",
+        "effect_particle_id": "p_effect_a62e4c"
       }
     },
     "stage4": {
