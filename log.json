@@ -401,7 +401,9 @@
         "context": "working hard",
         "event": "He succeeded",
         "agent_particle_id": "p_agent_925b02",
-        "effect_particle_id": "p_effect_7f3a91"
+        "effect_particle_id": "p_effect_7f3a91",
+        "context_particle_id": "p_manner_e110cd",
+        "event_particle_id": "p_event_7f3a91"
       }
     },
     "stage4": {
@@ -436,7 +438,9 @@
         "context": "the long meeting",
         "event": "I was stressed",
         "agent_particle_id": "p_agent_28500d",
-        "effect_particle_id": "p_effect_a62e4c"
+        "effect_particle_id": "p_effect_a62e4c",
+        "context_particle_id": "p_temporal_dc3edc",
+        "event_particle_id": "p_event_a62e4c"
       }
     },
     "stage4": {

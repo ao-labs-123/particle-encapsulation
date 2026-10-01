@@ -81,9 +81,11 @@ class ParticleFactory:
 
                 relation = structure.get("relation")
                 if relation in {"Temporal", "Manner"} and structure.get("context"):
+                    context_particle_id = f"p_{relation.lower()}_{uuid.uuid4().hex[:6]}"
+                    structure["context_particle_id"] = context_particle_id
                     particles.append(
                         Particle(
-                            id=f"p_{relation.lower()}_{uuid.uuid4().hex[:6]}",
+                            id=context_particle_id,
                             label=structure["context"],
                             entity_type=relation,
                             state="determined",
@@ -92,6 +94,19 @@ class ParticleFactory:
                                 "marker": structure.get("marker"),
                                 "event": structure.get("event")
                             }
+                        )
+                    )
+
+                if relation in {"Temporal", "Manner"} and structure.get("event"):
+                    event_particle_id = f"p_event_{uuid.uuid4().hex[:6]}"
+                    structure["event_particle_id"] = event_particle_id
+                    particles.append(
+                        Particle(
+                            id=event_particle_id,
+                            label=structure["event"],
+                            entity_type="Event",
+                            state="determined",
+                            constraints=[stage3.get("process", "stage3_relation")]
                         )
                     )
 
