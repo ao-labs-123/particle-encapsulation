@@ -83,6 +83,7 @@ class ParticleFactory:
                 if relation in {"Temporal", "Manner"} and structure.get("context"):
                     context_particle_id = f"p_{relation.lower()}_{uuid.uuid4().hex[:6]}"
                     structure["context_particle_id"] = context_particle_id
+                    structure[f"{relation.lower()}_particle_id"] = context_particle_id
                     particles.append(
                         Particle(
                             id=context_particle_id,

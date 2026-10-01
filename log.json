@@ -18,9 +18,9 @@
       "structure": {
         "cause": "i helped",
         "effect": "he succeeded",
-        "agent_particle_id": "p_agent_ac3890",
-        "cause_particle_id": "p_cause_f04ee9",
-        "effect_particle_id": "p_effect_2f0291"
+        "agent_particle_id": "p_agent_c7c1d2",
+        "cause_particle_id": "p_cause_2d92c5",
+        "effect_particle_id": "p_effect_ecaf45"
       }
     },
     "stage4": {
@@ -188,9 +188,9 @@
       "structure": {
         "cause": "you helped",
         "effect": "succeeded",
-        "agent_particle_id": "p_agent_a8894c",
-        "cause_particle_id": "p_cause_6d70a2",
-        "effect_particle_id": "p_effect_3cbf5d"
+        "agent_particle_id": "p_agent_1e4d8c",
+        "cause_particle_id": "p_cause_f090aa",
+        "effect_particle_id": "p_effect_a11e90"
       }
     },
     "stage4": {
@@ -330,9 +330,9 @@
       "structure": {
         "cause": "the project",
         "effect": "i'm stressed",
-        "agent_particle_id": "p_agent_f3a21d",
-        "cause_particle_id": "p_cause_8b63a1",
-        "effect_particle_id": "p_effect_2cb62e"
+        "agent_particle_id": "p_agent_6e3d7c",
+        "cause_particle_id": "p_cause_8674cc",
+        "effect_particle_id": "p_effect_ff7567"
       }
     },
     "stage4": {
@@ -364,9 +364,9 @@
       "structure": {
         "cause": "you helped",
         "effect": "i succeeded",
-        "agent_particle_id": "p_agent_4076e6",
-        "cause_particle_id": "p_cause_ec78a6",
-        "effect_particle_id": "p_effect_d5c396"
+        "agent_particle_id": "p_agent_6a1786",
+        "cause_particle_id": "p_cause_319a7e",
+        "effect_particle_id": "p_effect_4329b4"
       }
     },
     "stage4": {
@@ -400,10 +400,11 @@
         "marker": "by",
         "context": "working hard",
         "event": "He succeeded",
-        "agent_particle_id": "p_agent_925b02",
-        "effect_particle_id": "p_effect_7f3a91",
-        "context_particle_id": "p_manner_e110cd",
-        "event_particle_id": "p_event_7f3a91"
+        "agent_particle_id": "p_agent_1da7f0",
+        "effect_particle_id": "p_effect_ebdbdf",
+        "context_particle_id": "p_manner_f1a670",
+        "manner_particle_id": "p_manner_f1a670",
+        "event_particle_id": "p_event_1664ec"
       }
     },
     "stage4": {
@@ -437,10 +438,11 @@
         "marker": "after",
         "context": "the long meeting",
         "event": "I was stressed",
-        "agent_particle_id": "p_agent_28500d",
-        "effect_particle_id": "p_effect_a62e4c",
-        "context_particle_id": "p_temporal_dc3edc",
-        "event_particle_id": "p_event_a62e4c"
+        "agent_particle_id": "p_agent_dd52db",
+        "effect_particle_id": "p_effect_87c9ac",
+        "context_particle_id": "p_temporal_fbce8c",
+        "temporal_particle_id": "p_temporal_fbce8c",
+        "event_particle_id": "p_event_644b65"
       }
     },
     "stage4": {
