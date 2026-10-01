@@ -44,7 +44,19 @@ class ParticleFactory:
             structure = stage3.get("structure") or {}
 
             if isinstance(structure, dict):
-                if agent_particle_id:
+                relation = structure.get("relation")
+                has_contextual_relation = relation in {"Temporal", "Manner"}
+
+                if has_contextual_relation:
+                    for particle_id_key in (
+                        "agent_particle_id",
+                        "effect_particle_id",
+                        "event_particle_id",
+                        "context_particle_id",
+                        f"{relation.lower()}_particle_id",
+                    ):
+                        structure.pop(particle_id_key, None)
+                elif agent_particle_id:
                     structure["agent_particle_id"] = agent_particle_id
 
                 # Cause (原因) 粒子の生成
@@ -62,13 +74,14 @@ class ParticleFactory:
                     )
             
                 # Cause/Effect と Temporal/Manner の event を結果粒子として生成
-                effect_label = structure.get("effect")
-                if effect_label is None and structure.get("relation") in {"Temporal", "Manner"}:
-                    effect_label = structure.get("event")
+                effect_label = structure.get("event") if has_contextual_relation else structure.get("effect")
 
                 if effect_label:
                     effect_particle_id = f"p_effect_{uuid.uuid4().hex[:6]}"
-                    structure["effect_particle_id"] = effect_particle_id
+                    if has_contextual_relation:
+                        structure["event_particle_id"] = effect_particle_id
+                    else:
+                        structure["effect_particle_id"] = effect_particle_id
                     particles.append(
                         Particle(
                             id=effect_particle_id,
@@ -79,11 +92,9 @@ class ParticleFactory:
                         )
                     )
 
-                relation = structure.get("relation")
-                if relation in {"Temporal", "Manner"} and structure.get("context"):
+                if has_contextual_relation and structure.get("context"):
                     context_particle_id = f"p_{relation.lower()}_{uuid.uuid4().hex[:6]}"
                     structure["context_particle_id"] = context_particle_id
-                    structure[f"{relation.lower()}_particle_id"] = context_particle_id
                     particles.append(
                         Particle(
                             id=context_particle_id,
@@ -95,19 +106,6 @@ class ParticleFactory:
                                 "marker": structure.get("marker"),
                                 "event": structure.get("event")
                             }
-                        )
-                    )
-
-                if relation in {"Temporal", "Manner"} and structure.get("event"):
-                    event_particle_id = f"p_event_{uuid.uuid4().hex[:6]}"
-                    structure["event_particle_id"] = event_particle_id
-                    particles.append(
-                        Particle(
-                            id=event_particle_id,
-                            label=structure["event"],
-                            entity_type="Event",
-                            state="determined",
-                            constraints=[stage3.get("process", "stage3_relation")]
                         )
                     )
 
