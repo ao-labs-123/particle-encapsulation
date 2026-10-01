@@ -24,14 +24,14 @@ def main():
         raw_data = response.read().decode("utf-8")
         log_data = json.loads(raw_data)
 
-    # 2. ローカルの log.json にそのまま保存（反映）
+    # 2. 粒子群を生成し、Stage 3 の構造に粒子IDを反映
+    particles = ParticleFactory.from_log_json(log_data)
+
+    # 3. IDを反映したログを保存
     with open(LOCAL_FILE, "w", encoding="utf-8") as f:
         json.dump(log_data, f, ensure_ascii=False, indent=2)
 
     print(f"Successfully saved to {LOCAL_FILE}!")
-
-    # 3. 粒子群の生成処理
-    particles = ParticleFactory.from_log_json(log_data)
 
     with open(PARTICLES_FILE, "w", encoding="utf-8") as f:
         json.dump([asdict(p) for p in particles], f, ensure_ascii=False, indent=2)

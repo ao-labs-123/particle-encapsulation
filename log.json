@@ -17,7 +17,10 @@
       "mapping": "i helped -> Causes -> he succeeded",
       "structure": {
         "cause": "i helped",
-        "effect": "he succeeded"
+        "effect": "he succeeded",
+        "agent_particle_id": "p_agent_ac3890",
+        "cause_particle_id": "p_cause_f04ee9",
+        "effect_particle_id": "p_effect_2f0291"
       }
     },
     "stage4": {
@@ -184,7 +187,10 @@
       "mapping": "you helped -> Causes -> succeeded",
       "structure": {
         "cause": "you helped",
-        "effect": "succeeded"
+        "effect": "succeeded",
+        "agent_particle_id": "p_agent_a8894c",
+        "cause_particle_id": "p_cause_6d70a2",
+        "effect_particle_id": "p_effect_3cbf5d"
       }
     },
     "stage4": {
@@ -323,7 +329,10 @@
       "mapping": "the project -> Causes -> i'm stressed",
       "structure": {
         "cause": "the project",
-        "effect": "i'm stressed"
+        "effect": "i'm stressed",
+        "agent_particle_id": "p_agent_f3a21d",
+        "cause_particle_id": "p_cause_8b63a1",
+        "effect_particle_id": "p_effect_2cb62e"
       }
     },
     "stage4": {
@@ -354,7 +363,10 @@
       "mapping": "you helped -> Causes -> i succeeded",
       "structure": {
         "cause": "you helped",
-        "effect": "i succeeded"
+        "effect": "i succeeded",
+        "agent_particle_id": "p_agent_4076e6",
+        "cause_particle_id": "p_cause_ec78a6",
+        "effect_particle_id": "p_effect_d5c396"
       }
     },
     "stage4": {
@@ -387,7 +399,8 @@
         "relation": "Manner",
         "marker": "by",
         "context": "working hard",
-        "event": "He succeeded"
+        "event": "He succeeded",
+        "agent_particle_id": "p_agent_925b02"
       }
     },
     "stage4": {
@@ -420,7 +433,8 @@
         "relation": "Temporal",
         "marker": "after",
         "context": "the long meeting",
-        "event": "I was stressed"
+        "event": "I was stressed",
+        "agent_particle_id": "p_agent_28500d"
       }
     },
     "stage4": {

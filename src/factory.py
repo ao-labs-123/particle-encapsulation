@@ -22,11 +22,13 @@ class ParticleFactory:
         
             # Stage 2 で解決された Agent があればそれを優先、無ければ Stage 1 を参照
             agent_label = stage2.get("resolved_agent") or stage1.get("agent")
+            agent_particle_id = None
         
             if agent_label:
+                agent_particle_id = f"p_agent_{uuid.uuid4().hex[:6]}"
                 particles.append(
                     Particle(
-                        id=f"p_agent_{uuid.uuid4().hex[:6]}",
+                        id=agent_particle_id,
                         label=agent_label,
                         entity_type="Agent",
                         state="determined",
@@ -42,11 +44,16 @@ class ParticleFactory:
             structure = stage3.get("structure") or {}
 
             if isinstance(structure, dict):
+                if agent_particle_id:
+                    structure["agent_particle_id"] = agent_particle_id
+
                 # Cause (原因) 粒子の生成
                 if "cause" in structure:
+                    cause_particle_id = f"p_cause_{uuid.uuid4().hex[:6]}"
+                    structure["cause_particle_id"] = cause_particle_id
                     particles.append(
                         Particle(
-                            id=f"p_cause_{uuid.uuid4().hex[:6]}",
+                            id=cause_particle_id,
                             label=structure["cause"],
                             entity_type="Cause",
                             state="determined",
@@ -56,9 +63,11 @@ class ParticleFactory:
             
                 # Effect (結果) 粒子の生成
                 if "effect" in structure:
+                    effect_particle_id = f"p_effect_{uuid.uuid4().hex[:6]}"
+                    structure["effect_particle_id"] = effect_particle_id
                     particles.append(
                         Particle(
-                            id=f"p_effect_{uuid.uuid4().hex[:6]}",
+                            id=effect_particle_id,
                             label=structure["effect"],
                             entity_type="Effect",
                             state="determined",
