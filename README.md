@@ -4,7 +4,7 @@
 
 Standard ACT-R operates on a macro level with production rules. This project zooms into the micro-level of cognitive processing.
 
-## Micro-ACT-R Pipeline
+## Micro-ACT-R Pipeline Architecture
 <img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/10de3e8f-6ca9-45a6-b8f8-269ce818a3f5" />
 
 - [input-parser](https://github.com/ao-labs-123/input-parser)
