@@ -16,8 +16,8 @@
         "marker": "because",
         "cause": "I helped",
         "effect": "He succeeded",
-        "cause_particle_id": "p_cause_c15975",
-        "effect_particle_id": "p_effect_caf226"
+        "cause_particle_id": "p_cause_5dc2f2",
+        "effect_particle_id": "p_effect_be37ba"
       },
       "agent": "He"
     },
@@ -456,8 +456,8 @@
         "marker": "because",
         "cause": "you helped",
         "effect": "Succeeded",
-        "cause_particle_id": "p_cause_c3d0bb",
-        "effect_particle_id": "p_effect_04ccc8"
+        "cause_particle_id": "p_cause_6eeac6",
+        "effect_particle_id": "p_effect_d84862"
       },
       "agent": "Unknown"
     },
@@ -732,8 +732,8 @@
         "marker": "due to",
         "cause": "the project",
         "effect": "I'm stressed",
-        "cause_particle_id": "p_cause_79f4d9",
-        "effect_particle_id": "p_effect_f43cb0"
+        "cause_particle_id": "p_cause_ebe754",
+        "effect_particle_id": "p_effect_51ffd0"
       },
       "agent": "I"
     },
@@ -792,8 +792,8 @@
         "marker": "because",
         "cause": "you helped",
         "effect": "I succeeded",
-        "cause_particle_id": "p_cause_71c8c3",
-        "effect_particle_id": "p_effect_d2a264"
+        "cause_particle_id": "p_cause_9c9991",
+        "effect_particle_id": "p_effect_794289"
       },
       "agent": "I"
     },
@@ -1395,8 +1395,8 @@
         "marker": "because of",
         "cause": "bad luck",
         "effect": "Failed the exam",
-        "cause_particle_id": "p_cause_3f400c",
-        "effect_particle_id": "p_effect_8c8999"
+        "cause_particle_id": "p_cause_eedcd5",
+        "effect_particle_id": "p_effect_6ff3db"
       },
       "agent": "Unknown"
     },

@@ -145,4 +145,22 @@ class ParticleFactory:
                     )
                 )
 
+            # -------------------------------------------------------------
+            # 5. Stage 5 (5W1H) 粒子の抽出
+            # -------------------------------------------------------------
+            stage5 = item.get("stage5") or {}
+            frame = stage5.get("frame") or stage5
+            for dimension in ("who", "what", "when", "where", "why", "how"):
+                label = str(frame.get(dimension) or "Unspecified")
+                state = "unspecified" if label.strip().casefold() == "unspecified" else "determined"
+                particles.append(
+                    Particle(
+                        id=f"p_{dimension}_{uuid.uuid4().hex[:6]}",
+                        label=label,
+                        entity_type=dimension.capitalize(),
+                        state=state,
+                        constraints=[stage5.get("stage", "Stage 5 - 5W1H Synthesis")]
+                    )
+                )
+
         return particles
