@@ -18,18 +18,29 @@ class ParticleFactory:
             # -------------------------------------------------------------
         for item in log_data:
             stage1 = item.get("stage1") or {}
-        
-            agent_label = stage1.get("resolved_agent") 
+            stage2 = item.get("stage2") or {}
+
+            agent_label = (
+                stage2.get("resolved_agent")
+                or stage2.get("agent")
+                or stage1.get("resolved_agent")
+                or stage1.get("agent")
+            )
             agent_particle_id = None
         
             if agent_label:
+                agent_state = (
+                    "unspecified"
+                    if str(agent_label).strip().casefold() in {"unknown", "unspecified"}
+                    else "determined"
+                )
                 agent_particle_id = f"p_agent_{uuid.uuid4().hex[:6]}"
                 particles.append(
                     Particle(
                         id=agent_particle_id,
                         label=agent_label,
                         entity_type="Agent",
-                        state="determined",
+                        state=agent_state,
                         constraints=[stage1.get("process", "explicit_subject")],
                         properties={"decision": stage1.get("decision")}
                     )
@@ -38,7 +49,6 @@ class ParticleFactory:
             # -------------------------------------------------------------
             # 2. Stage 2 (因果関係: Cause / Effect) 粒子の抽出
             # -------------------------------------------------------------
-            stage2 = item.get("stage2") or {}
             structure = stage2.get("structure") or {}
 
             if isinstance(structure, dict):
@@ -141,7 +151,7 @@ class ParticleFactory:
                         entity_type="Morphology",
                         state="determined",
                         constraints=[morphology],
-                        properties={"result": stage4.get("result")}
+                        properties={"result": stage4.get("result") or stage4.get("structure")}
                     )
                 )
 
