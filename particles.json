@@ -1,6 +1,6 @@
 [
   {
-    "id": "p_agent_eeb0ce",
+    "id": "p_agent_922ee4",
     "label": "He",
     "entity_type": "Agent",
     "state": "determined",
@@ -12,27 +12,27 @@
     }
   },
   {
-    "id": "p_cause_9fb7a8",
+    "id": "p_cause_c605f7",
     "label": "I helped",
     "entity_type": "Cause",
     "state": "determined",
     "constraints": [
-      "Causal Marker: because"
+      "Causal Marker: because; Event: Action"
     ],
     "properties": {}
   },
   {
-    "id": "p_effect_8176d6",
+    "id": "p_effect_dcd8fa",
     "label": "He succeeded",
     "entity_type": "Effect",
     "state": "determined",
     "constraints": [
-      "Causal Marker: because"
+      "Causal Marker: because; Event: Action"
     ],
     "properties": {}
   },
   {
-    "id": "p_relative_clause_676a21",
+    "id": "p_relative_clause_0aa127",
     "label": "No modification structure found",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -45,7 +45,7 @@
     }
   },
   {
-    "id": "p_morphology_193348",
+    "id": "p_morphology_22b0fb",
     "label": "[Morphology: Base] → [Category: Action]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -65,7 +65,7 @@
     }
   },
   {
-    "id": "p_who_977b4a",
+    "id": "p_who_dda7d6",
     "label": "He",
     "entity_type": "Who",
     "state": "determined",
@@ -75,7 +75,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_dc839c",
+    "id": "p_what_852b50",
     "label": "succeeded",
     "entity_type": "What",
     "state": "determined",
@@ -85,7 +85,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_3b777c",
+    "id": "p_when_172b58",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -95,7 +95,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_97b726",
+    "id": "p_where_cb73f9",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -105,7 +105,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_a3dabc",
+    "id": "p_why_7bb1c8",
     "label": "because I helped",
     "entity_type": "Why",
     "state": "determined",
@@ -115,7 +115,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_1c1a46",
+    "id": "p_how_ab4fb3",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -125,7 +125,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_1387db",
+    "id": "p_agent_6d7b25",
     "label": "You",
     "entity_type": "Agent",
     "state": "determined",
@@ -137,7 +137,7 @@
     }
   },
   {
-    "id": "p_relative_clause_4933c7",
+    "id": "p_relative_clause_3e56a5",
     "label": "No modification structure found",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -150,7 +150,7 @@
     }
   },
   {
-    "id": "p_morphology_90dd07",
+    "id": "p_morphology_5809f8",
     "label": "[Morphology: Base] → [Category: Action]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -170,7 +170,7 @@
     }
   },
   {
-    "id": "p_who_4322c6",
+    "id": "p_who_55c9cb",
     "label": "You",
     "entity_type": "Who",
     "state": "determined",
@@ -180,7 +180,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_e0d29b",
+    "id": "p_what_29c49b",
     "label": "review the document",
     "entity_type": "What",
     "state": "determined",
@@ -190,7 +190,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_e47e29",
+    "id": "p_when_666b32",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -200,7 +200,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_5ffe74",
+    "id": "p_where_d2d75a",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -210,7 +210,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_30b88b",
+    "id": "p_why_f0b658",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -220,7 +220,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_f9a458",
+    "id": "p_how_6edda6",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -230,7 +230,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_68ed31",
+    "id": "p_agent_a04170",
     "label": "I",
     "entity_type": "Agent",
     "state": "determined",
@@ -242,7 +242,7 @@
     }
   },
   {
-    "id": "p_relative_clause_3c92fc",
+    "id": "p_relative_clause_694a78",
     "label": "No modification structure found",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -255,27 +255,27 @@
     }
   },
   {
-    "id": "p_morphology_1b839f",
-    "label": "[Morphology: Base] → [Category: Action]",
+    "id": "p_morphology_2824e9",
+    "label": "[State predicate] → [Category: State]",
     "entity_type": "Morphology",
     "state": "determined",
     "constraints": [
-      "[Morphology: Base] → [Category: Action]"
+      "[State predicate] → [Category: State]"
     ],
     "properties": {
       "result": {
-        "form": "Base",
-        "verb": "was",
+        "form": "State",
+        "verb": "strange",
         "subject": "Thought",
-        "object": "strange",
-        "category": "Action",
-        "patient": "strange",
+        "object": null,
+        "category": "State",
+        "patient": "Unspecified",
         "agent": "I"
       }
     }
   },
   {
-    "id": "p_who_656519",
+    "id": "p_who_9aa0d5",
     "label": "I",
     "entity_type": "Who",
     "state": "determined",
@@ -285,7 +285,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_f7ec3a",
+    "id": "p_what_b9ce63",
     "label": "thought was strange",
     "entity_type": "What",
     "state": "determined",
@@ -295,7 +295,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_12d8fc",
+    "id": "p_when_a82d80",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -305,7 +305,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_50d375",
+    "id": "p_where_e14b70",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -315,7 +315,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_799581",
+    "id": "p_why_bc3b8c",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -325,7 +325,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_b67363",
+    "id": "p_how_0bafa9",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -335,7 +335,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_b23d3f",
+    "id": "p_agent_661b7c",
     "label": "He/She/They",
     "entity_type": "Agent",
     "state": "determined",
@@ -347,40 +347,48 @@
     }
   },
   {
-    "id": "p_relative_clause_eb00e8",
-    "label": "No modification structure found",
+    "id": "p_relative_clause_2f54fd",
+    "label": "Degree modifier",
     "entity_type": "RelativeClause",
     "state": "determined",
     "constraints": [
-      "No modification structure found"
+      "Degree modifier"
     ],
     "properties": {
-      "decision": "Standard",
-      "result": null
+      "decision": "Supplementary",
+      "result": {
+        "type": "Supplementary",
+        "antecedent": "strange",
+        "target": "strange",
+        "clause": "apparently",
+        "kind": "Degree",
+        "classification": "Supplementary",
+        "modifier_kind": "Degree"
+      }
     }
   },
   {
-    "id": "p_morphology_ccc98c",
-    "label": "[Morphology: Base] → [Category: Action]",
+    "id": "p_morphology_3bcb76",
+    "label": "[State predicate] → [Category: State]",
     "entity_type": "Morphology",
     "state": "determined",
     "constraints": [
-      "[Morphology: Base] → [Category: Action]"
+      "[State predicate] → [Category: State]"
     ],
     "properties": {
       "result": {
-        "form": "Base",
-        "verb": "it",
-        "subject": "Thought",
-        "object": "was strange apparently",
-        "category": "Action",
-        "patient": "was strange apparently",
+        "form": "State",
+        "verb": "strange",
+        "subject": "Thought it",
+        "object": "apparently",
+        "category": "State",
+        "patient": "apparently",
         "agent": "He/She/They"
       }
     }
   },
   {
-    "id": "p_who_57de5d",
+    "id": "p_who_09801c",
     "label": "He/She/They",
     "entity_type": "Who",
     "state": "determined",
@@ -390,7 +398,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_ef032d",
+    "id": "p_what_9eed0e",
     "label": "thought it was strange",
     "entity_type": "What",
     "state": "determined",
@@ -400,7 +408,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_25f4fc",
+    "id": "p_when_9d595d",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -410,7 +418,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_50dfeb",
+    "id": "p_where_57ef7c",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -420,7 +428,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_de29ce",
+    "id": "p_why_d9b37f",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -430,7 +438,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_faa13b",
+    "id": "p_how_9ad0be",
     "label": "apparently",
     "entity_type": "How",
     "state": "determined",
@@ -440,7 +448,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_a037ac",
+    "id": "p_agent_2256d4",
     "label": "Unknown",
     "entity_type": "Agent",
     "state": "unspecified",
@@ -452,7 +460,7 @@
     }
   },
   {
-    "id": "p_relative_clause_ba7405",
+    "id": "p_relative_clause_bda342",
     "label": "No modification structure found",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -465,7 +473,7 @@
     }
   },
   {
-    "id": "p_morphology_ce4488",
+    "id": "p_morphology_d0e56c",
     "label": "[Morphology: Base] → [Category: Action]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -485,7 +493,7 @@
     }
   },
   {
-    "id": "p_who_dd28dd",
+    "id": "p_who_392807",
     "label": "Unknown",
     "entity_type": "Who",
     "state": "determined",
@@ -495,7 +503,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_68cd48",
+    "id": "p_what_017e6c",
     "label": "went",
     "entity_type": "What",
     "state": "determined",
@@ -505,7 +513,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_d5ecb8",
+    "id": "p_when_c0e8b3",
     "label": "yesterday",
     "entity_type": "When",
     "state": "determined",
@@ -515,7 +523,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_18ec85",
+    "id": "p_where_c695f3",
     "label": "cafe",
     "entity_type": "Where",
     "state": "determined",
@@ -525,7 +533,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_330b05",
+    "id": "p_why_caa85d",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -535,7 +543,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_a1d5a3",
+    "id": "p_how_8bdb51",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -545,7 +553,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_36e506",
+    "id": "p_agent_ebee05",
     "label": "you",
     "entity_type": "Agent",
     "state": "determined",
@@ -557,7 +565,7 @@
     }
   },
   {
-    "id": "p_relative_clause_50ebb3",
+    "id": "p_relative_clause_d919a3",
     "label": "Defining clause",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -569,12 +577,17 @@
       "result": {
         "type": "Defining",
         "antecedent": "It is required",
-        "clause": "you submit the form"
+        "target": "It is required",
+        "clause": "you submit the form",
+        "kind": "RelativeClause",
+        "relative_marker": "that",
+        "classification": "Essential",
+        "modifier_kind": "RelativeClause"
       }
     }
   },
   {
-    "id": "p_morphology_367d64",
+    "id": "p_morphology_8aadce",
     "label": "[Passive: be + V-en + by]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -594,7 +607,7 @@
     }
   },
   {
-    "id": "p_who_9a2106",
+    "id": "p_who_609b67",
     "label": "you",
     "entity_type": "Who",
     "state": "determined",
@@ -604,7 +617,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_a1d2b5",
+    "id": "p_what_9db3c2",
     "label": "required It",
     "entity_type": "What",
     "state": "determined",
@@ -614,7 +627,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_2bf1ac",
+    "id": "p_when_d866ed",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -624,7 +637,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_500788",
+    "id": "p_where_d5508f",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -634,7 +647,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_f9df86",
+    "id": "p_why_deeb40",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -644,7 +657,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_3ddd28",
+    "id": "p_how_e5624c",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -654,7 +667,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_21fc70",
+    "id": "p_agent_f05807",
     "label": "I",
     "entity_type": "Agent",
     "state": "determined",
@@ -666,7 +679,7 @@
     }
   },
   {
-    "id": "p_relative_clause_351526",
+    "id": "p_relative_clause_c54856",
     "label": "No modification structure found",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -679,7 +692,7 @@
     }
   },
   {
-    "id": "p_morphology_371f71",
+    "id": "p_morphology_2e54a9",
     "label": "[Morphology: Base] → [Category: Action]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -699,7 +712,7 @@
     }
   },
   {
-    "id": "p_who_75e8f3",
+    "id": "p_who_71079d",
     "label": "I",
     "entity_type": "Who",
     "state": "determined",
@@ -709,7 +722,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_aa189e",
+    "id": "p_what_a86199",
     "label": "submitted the form",
     "entity_type": "What",
     "state": "determined",
@@ -719,7 +732,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_b4eab0",
+    "id": "p_when_0adf45",
     "label": "yesterday",
     "entity_type": "When",
     "state": "determined",
@@ -729,7 +742,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_be1ee2",
+    "id": "p_where_957818",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -739,7 +752,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_1f0f65",
+    "id": "p_why_daf355",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -749,7 +762,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_2e89e4",
+    "id": "p_how_60cf45",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -759,7 +772,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_332746",
+    "id": "p_agent_100455",
     "label": "I",
     "entity_type": "Agent",
     "state": "determined",
@@ -771,7 +784,7 @@
     }
   },
   {
-    "id": "p_relative_clause_6db775",
+    "id": "p_relative_clause_b2cb5d",
     "label": "No modification structure found",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -784,7 +797,7 @@
     }
   },
   {
-    "id": "p_morphology_e452a3",
+    "id": "p_morphology_7afccb",
     "label": "[Morphology: Base] → [Category: Action]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -804,7 +817,7 @@
     }
   },
   {
-    "id": "p_who_06dea5",
+    "id": "p_who_08cab6",
     "label": "I",
     "entity_type": "Who",
     "state": "determined",
@@ -814,7 +827,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_25c51a",
+    "id": "p_what_7929f1",
     "label": "wrote the report",
     "entity_type": "What",
     "state": "determined",
@@ -824,7 +837,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_9d9439",
+    "id": "p_when_f9e489",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -834,7 +847,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_c3bc91",
+    "id": "p_where_bd9a54",
     "label": "at the office",
     "entity_type": "Where",
     "state": "determined",
@@ -844,7 +857,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_8818f8",
+    "id": "p_why_e8933a",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -854,7 +867,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_dd1350",
+    "id": "p_how_c725d4",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -864,7 +877,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_89f13e",
+    "id": "p_agent_e87f53",
     "label": "Unknown",
     "entity_type": "Agent",
     "state": "unspecified",
@@ -876,7 +889,7 @@
     }
   },
   {
-    "id": "p_cause_1c493d",
+    "id": "p_cause_c0c7da",
     "label": "you helped",
     "entity_type": "Cause",
     "state": "determined",
@@ -886,7 +899,7 @@
     "properties": {}
   },
   {
-    "id": "p_effect_f679d2",
+    "id": "p_effect_7cd5cb",
     "label": "Succeeded",
     "entity_type": "Effect",
     "state": "determined",
@@ -896,7 +909,7 @@
     "properties": {}
   },
   {
-    "id": "p_relative_clause_92b639",
+    "id": "p_relative_clause_b22542",
     "label": "No modification structure found",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -909,7 +922,7 @@
     }
   },
   {
-    "id": "p_morphology_5f1ed2",
+    "id": "p_morphology_62343d",
     "label": "[Morphology: Base] → [Category: Action]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -929,7 +942,7 @@
     }
   },
   {
-    "id": "p_who_9d0da6",
+    "id": "p_who_598be4",
     "label": "Unknown",
     "entity_type": "Who",
     "state": "determined",
@@ -939,7 +952,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_056a52",
+    "id": "p_what_6e6b29",
     "label": "succeeded",
     "entity_type": "What",
     "state": "determined",
@@ -949,7 +962,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_b8b98b",
+    "id": "p_when_d3a5ef",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -959,7 +972,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_e84087",
+    "id": "p_where_a354db",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -969,7 +982,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_cd9de9",
+    "id": "p_why_918a3a",
     "label": "because you helped",
     "entity_type": "Why",
     "state": "determined",
@@ -979,7 +992,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_f09adc",
+    "id": "p_how_1e3714",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -989,7 +1002,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_b105b7",
+    "id": "p_agent_ac475d",
     "label": "Unknown",
     "entity_type": "Agent",
     "state": "unspecified",
@@ -1001,7 +1014,7 @@
     }
   },
   {
-    "id": "p_relative_clause_14a936",
+    "id": "p_relative_clause_33b743",
     "label": "No modification structure found",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -1014,7 +1027,7 @@
     }
   },
   {
-    "id": "p_morphology_dce393",
+    "id": "p_morphology_72ed0e",
     "label": "[Morphology: Base] → [Category: Action]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -1034,7 +1047,7 @@
     }
   },
   {
-    "id": "p_who_a5749c",
+    "id": "p_who_1d8331",
     "label": "Unknown",
     "entity_type": "Who",
     "state": "determined",
@@ -1044,7 +1057,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_1bff0c",
+    "id": "p_what_5cb920",
     "label": "failed despite the effort",
     "entity_type": "What",
     "state": "determined",
@@ -1054,7 +1067,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_d17335",
+    "id": "p_when_014145",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -1064,7 +1077,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_3e65d1",
+    "id": "p_where_5fab5f",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -1074,7 +1087,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_8b6e1c",
+    "id": "p_why_28dc13",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -1084,7 +1097,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_a1a106",
+    "id": "p_how_5fe60f",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -1094,7 +1107,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_7c2520",
+    "id": "p_agent_d5d1e9",
     "label": "Unknown",
     "entity_type": "Agent",
     "state": "unspecified",
@@ -1106,7 +1119,7 @@
     }
   },
   {
-    "id": "p_relative_clause_6c6e08",
+    "id": "p_relative_clause_40fb32",
     "label": "No modification structure found",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -1119,7 +1132,7 @@
     }
   },
   {
-    "id": "p_morphology_d79567",
+    "id": "p_morphology_de6c42",
     "label": "[Morphology: Base] → [Category: Action]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -1139,7 +1152,7 @@
     }
   },
   {
-    "id": "p_who_a74596",
+    "id": "p_who_989d25",
     "label": "Unknown",
     "entity_type": "Who",
     "state": "determined",
@@ -1149,7 +1162,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_de811a",
+    "id": "p_what_7575c7",
     "label": "required further investigation",
     "entity_type": "What",
     "state": "determined",
@@ -1159,7 +1172,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_21c613",
+    "id": "p_when_e0e9ba",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -1169,7 +1182,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_568d79",
+    "id": "p_where_b44efd",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -1179,7 +1192,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_45ca66",
+    "id": "p_why_e5468a",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -1189,7 +1202,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_19704c",
+    "id": "p_how_599793",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -1199,7 +1212,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_23cdd0",
+    "id": "p_agent_c48a71",
     "label": "Unknown",
     "entity_type": "Agent",
     "state": "unspecified",
@@ -1211,7 +1224,7 @@
     }
   },
   {
-    "id": "p_relative_clause_673ac0",
+    "id": "p_relative_clause_e7d74e",
     "label": "No modification structure found",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -1224,7 +1237,7 @@
     }
   },
   {
-    "id": "p_morphology_fb4200",
+    "id": "p_morphology_8bad58",
     "label": "[Morphology: Base] → [Category: Action]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -1244,7 +1257,7 @@
     }
   },
   {
-    "id": "p_who_b7aa9f",
+    "id": "p_who_a752f8",
     "label": "Unknown",
     "entity_type": "Who",
     "state": "determined",
@@ -1254,7 +1267,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_e54352",
+    "id": "p_what_ac492f",
     "label": "submitted the form",
     "entity_type": "What",
     "state": "determined",
@@ -1264,7 +1277,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_628ec0",
+    "id": "p_when_545813",
     "label": "yesterday",
     "entity_type": "When",
     "state": "determined",
@@ -1274,7 +1287,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_b119a7",
+    "id": "p_where_1cd86b",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -1284,7 +1297,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_f63004",
+    "id": "p_why_121ee9",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -1294,7 +1307,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_b769e4",
+    "id": "p_how_9d2e78",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -1304,7 +1317,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_afeeb6",
+    "id": "p_agent_9089ac",
     "label": "Unknown",
     "entity_type": "Agent",
     "state": "unspecified",
@@ -1316,7 +1329,7 @@
     }
   },
   {
-    "id": "p_relative_clause_d46c64",
+    "id": "p_relative_clause_713160",
     "label": "No modification structure found",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -1329,7 +1342,7 @@
     }
   },
   {
-    "id": "p_morphology_02e7b5",
+    "id": "p_morphology_c975f9",
     "label": "[Morphology: Base] → [Category: Action]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -1349,7 +1362,7 @@
     }
   },
   {
-    "id": "p_who_364693",
+    "id": "p_who_adcd8c",
     "label": "Unknown",
     "entity_type": "Who",
     "state": "determined",
@@ -1359,7 +1372,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_29a705",
+    "id": "p_what_db2478",
     "label": "succeeded",
     "entity_type": "What",
     "state": "determined",
@@ -1369,7 +1382,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_63bce4",
+    "id": "p_when_a1e9f1",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -1379,7 +1392,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_448082",
+    "id": "p_where_b235e3",
     "label": "in the meeting",
     "entity_type": "Where",
     "state": "determined",
@@ -1389,7 +1402,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_afee17",
+    "id": "p_why_279fda",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -1399,7 +1412,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_0d3581",
+    "id": "p_how_cb191a",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -1409,7 +1422,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_f1af76",
+    "id": "p_agent_77ac67",
     "label": "I",
     "entity_type": "Agent",
     "state": "determined",
@@ -1421,27 +1434,27 @@
     }
   },
   {
-    "id": "p_cause_2adc09",
+    "id": "p_cause_18182e",
     "label": "the project",
     "entity_type": "Cause",
     "state": "determined",
     "constraints": [
-      "Causal Marker: due to"
+      "Causal Marker: due to; Event: State"
     ],
     "properties": {}
   },
   {
-    "id": "p_effect_8b5f33",
+    "id": "p_effect_a703a6",
     "label": "I'm stressed",
     "entity_type": "Effect",
     "state": "determined",
     "constraints": [
-      "Causal Marker: due to"
+      "Causal Marker: due to; Event: State"
     ],
     "properties": {}
   },
   {
-    "id": "p_relative_clause_4e0153",
+    "id": "p_relative_clause_85abb2",
     "label": "No modification structure found",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -1454,7 +1467,7 @@
     }
   },
   {
-    "id": "p_morphology_b0dfa3",
+    "id": "p_morphology_93b8ea",
     "label": "[Morphology: Base] → [Category: Action]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -1474,7 +1487,7 @@
     }
   },
   {
-    "id": "p_who_d93a8a",
+    "id": "p_who_7a9bf6",
     "label": "I",
     "entity_type": "Who",
     "state": "determined",
@@ -1484,7 +1497,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_4040d9",
+    "id": "p_what_54eb8f",
     "label": "'m stressed due",
     "entity_type": "What",
     "state": "determined",
@@ -1494,7 +1507,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_ca07ec",
+    "id": "p_when_874675",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -1504,7 +1517,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_6e4a03",
+    "id": "p_where_e98a4f",
     "label": "project",
     "entity_type": "Where",
     "state": "determined",
@@ -1514,7 +1527,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_7b5777",
+    "id": "p_why_b6fd0e",
     "label": "due to the project",
     "entity_type": "Why",
     "state": "determined",
@@ -1524,7 +1537,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_838e13",
+    "id": "p_how_19e836",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -1534,7 +1547,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_2a9c29",
+    "id": "p_agent_e0e9d7",
     "label": "I",
     "entity_type": "Agent",
     "state": "determined",
@@ -1546,27 +1559,27 @@
     }
   },
   {
-    "id": "p_cause_8c4992",
+    "id": "p_cause_7b2ba4",
     "label": "you helped",
     "entity_type": "Cause",
     "state": "determined",
     "constraints": [
-      "Causal Marker: because"
+      "Causal Marker: because; Event: Action"
     ],
     "properties": {}
   },
   {
-    "id": "p_effect_0134c5",
+    "id": "p_effect_121112",
     "label": "I succeeded",
     "entity_type": "Effect",
     "state": "determined",
     "constraints": [
-      "Causal Marker: because"
+      "Causal Marker: because; Event: Action"
     ],
     "properties": {}
   },
   {
-    "id": "p_relative_clause_10e5d2",
+    "id": "p_relative_clause_dfdb91",
     "label": "No modification structure found",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -1579,7 +1592,7 @@
     }
   },
   {
-    "id": "p_morphology_8a7486",
+    "id": "p_morphology_581ec2",
     "label": "[Morphology: Base] → [Category: Action]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -1599,7 +1612,7 @@
     }
   },
   {
-    "id": "p_who_4f020d",
+    "id": "p_who_2a55d4",
     "label": "I",
     "entity_type": "Who",
     "state": "determined",
@@ -1609,7 +1622,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_0ae5bc",
+    "id": "p_what_7c6d20",
     "label": "succeeded",
     "entity_type": "What",
     "state": "determined",
@@ -1619,7 +1632,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_b81096",
+    "id": "p_when_e34dde",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -1629,7 +1642,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_af2bf8",
+    "id": "p_where_75bf7d",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -1639,7 +1652,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_dbf0d8",
+    "id": "p_why_07b273",
     "label": "because you helped",
     "entity_type": "Why",
     "state": "determined",
@@ -1649,7 +1662,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_f61467",
+    "id": "p_how_a8c70b",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -1659,7 +1672,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_0d7bc1",
+    "id": "p_agent_e295cf",
     "label": "He",
     "entity_type": "Agent",
     "state": "determined",
@@ -1671,20 +1684,32 @@
     }
   },
   {
-    "id": "p_relative_clause_d442c8",
-    "label": "No modification structure found",
+    "id": "p_relative_clause_b2c5d4",
+    "label": "Instrument phrase",
     "entity_type": "RelativeClause",
     "state": "determined",
     "constraints": [
-      "No modification structure found"
+      "Instrument phrase"
     ],
     "properties": {
-      "decision": "Standard",
-      "result": null
+      "decision": "Supplementary",
+      "result": {
+        "type": "Supplementary",
+        "antecedent": "He succeeded",
+        "target": "Success",
+        "clause": "Hard Work",
+        "kind": "Instrument",
+        "actor": "He",
+        "outcome": "Success",
+        "outcome_kind": "State",
+        "instrument": "Hard Work",
+        "classification": "Supplementary",
+        "modifier_kind": "Instrument"
+      }
     }
   },
   {
-    "id": "p_morphology_6985df",
+    "id": "p_morphology_b60848",
     "label": "[Morphology: Base] → [Category: Action]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -1704,7 +1729,7 @@
     }
   },
   {
-    "id": "p_who_84afdb",
+    "id": "p_who_c6fb95",
     "label": "He",
     "entity_type": "Who",
     "state": "determined",
@@ -1714,8 +1739,8 @@
     "properties": {}
   },
   {
-    "id": "p_what_344396",
-    "label": "succeeded",
+    "id": "p_what_3cd300",
+    "label": "succeeded by working hard",
     "entity_type": "What",
     "state": "determined",
     "constraints": [
@@ -1724,7 +1749,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_94c9cd",
+    "id": "p_when_4276a2",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -1734,7 +1759,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_72ce4f",
+    "id": "p_where_fbb38a",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -1744,7 +1769,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_5d3432",
+    "id": "p_why_5735ae",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -1754,8 +1779,8 @@
     "properties": {}
   },
   {
-    "id": "p_how_7c2917",
-    "label": "by working hard",
+    "id": "p_how_12f232",
+    "label": "Hard Work",
     "entity_type": "How",
     "state": "determined",
     "constraints": [
@@ -1764,7 +1789,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_0c8699",
+    "id": "p_agent_227eb9",
     "label": "I",
     "entity_type": "Agent",
     "state": "determined",
@@ -1776,20 +1801,28 @@
     }
   },
   {
-    "id": "p_relative_clause_d3d6cc",
-    "label": "No modification structure found",
+    "id": "p_relative_clause_b11777",
+    "label": "Adjectival modifier",
     "entity_type": "RelativeClause",
     "state": "determined",
     "constraints": [
-      "No modification structure found"
+      "Adjectival modifier"
     ],
     "properties": {
-      "decision": "Standard",
-      "result": null
+      "decision": "Supplementary",
+      "result": {
+        "type": "Supplementary",
+        "antecedent": "meeting",
+        "target": "meeting",
+        "clause": "long",
+        "kind": "Adjective",
+        "classification": "Supplementary",
+        "modifier_kind": "Adjective"
+      }
     }
   },
   {
-    "id": "p_morphology_9f1c9c",
+    "id": "p_morphology_644b98",
     "label": "[Passive: be + V-en + by]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -1809,7 +1842,7 @@
     }
   },
   {
-    "id": "p_who_8785fe",
+    "id": "p_who_acce9f",
     "label": "I",
     "entity_type": "Who",
     "state": "determined",
@@ -1819,7 +1852,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_b1ef10",
+    "id": "p_what_2a8521",
     "label": "stressed I",
     "entity_type": "What",
     "state": "determined",
@@ -1829,17 +1862,17 @@
     "properties": {}
   },
   {
-    "id": "p_when_9005b6",
-    "label": "Unspecified",
+    "id": "p_when_824b36",
+    "label": "after the long meeting",
     "entity_type": "When",
-    "state": "unspecified",
+    "state": "determined",
     "constraints": [
       "Stage 5 - 5W1H Synthesis"
     ],
     "properties": {}
   },
   {
-    "id": "p_where_514686",
+    "id": "p_where_9bb963",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -1849,7 +1882,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_443e83",
+    "id": "p_why_e240d8",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -1859,7 +1892,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_81c15d",
+    "id": "p_how_d59186",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -1869,7 +1902,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_b24231",
+    "id": "p_agent_fbe93a",
     "label": "The report",
     "entity_type": "Agent",
     "state": "determined",
@@ -1881,7 +1914,7 @@
     }
   },
   {
-    "id": "p_relative_clause_4248a2",
+    "id": "p_relative_clause_c6e97c",
     "label": "Non-defining clause",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -1893,32 +1926,35 @@
       "result": {
         "type": "Non-defining",
         "antecedent": "The report",
-        "clause": "was long"
+        "target": "The report",
+        "clause": "was long",
+        "classification": "Supplementary",
+        "modifier_kind": "RelativeClause"
       }
     }
   },
   {
-    "id": "p_morphology_3ccf07",
-    "label": "[Morphology: Base] → [Category: Action]",
+    "id": "p_morphology_5b9ce5",
+    "label": "[State predicate] → [Category: State]",
     "entity_type": "Morphology",
     "state": "determined",
     "constraints": [
-      "[Morphology: Base] → [Category: Action]"
+      "[State predicate] → [Category: State]"
     ],
     "properties": {
       "result": {
-        "form": "Base",
-        "verb": "report,",
-        "subject": "The",
-        "object": "which was long, is done",
-        "category": "Action",
-        "patient": "which was long, is done",
+        "form": "State",
+        "verb": "long",
+        "subject": "The report, which",
+        "object": null,
+        "category": "State",
+        "patient": "Unspecified",
         "agent": "The report"
       }
     }
   },
   {
-    "id": "p_who_76d913",
+    "id": "p_who_b1e541",
     "label": "The report",
     "entity_type": "Who",
     "state": "determined",
@@ -1928,7 +1964,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_ece1fe",
+    "id": "p_what_2b5927",
     "label": "which was long, is done",
     "entity_type": "What",
     "state": "determined",
@@ -1938,7 +1974,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_f9d14a",
+    "id": "p_when_5ea5b5",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -1948,7 +1984,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_326958",
+    "id": "p_where_94782c",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -1958,7 +1994,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_89d75b",
+    "id": "p_why_7bb208",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -1968,7 +2004,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_401ae5",
+    "id": "p_how_756b84",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -1978,7 +2014,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_9a1b85",
+    "id": "p_agent_54d184",
     "label": "The report",
     "entity_type": "Agent",
     "state": "determined",
@@ -1990,7 +2026,7 @@
     }
   },
   {
-    "id": "p_relative_clause_8da737",
+    "id": "p_relative_clause_7f62db",
     "label": "Defining clause",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -2002,32 +2038,37 @@
       "result": {
         "type": "Defining",
         "antecedent": "The report",
-        "clause": "I wrote"
+        "target": "The report",
+        "clause": "I wrote",
+        "kind": "RelativeClause",
+        "relative_marker": "that",
+        "classification": "Essential",
+        "modifier_kind": "RelativeClause"
       }
     }
   },
   {
-    "id": "p_morphology_47d50e",
-    "label": "[Morphology: Base] → [Category: Action]",
+    "id": "p_morphology_c99e96",
+    "label": "[State predicate] → [Category: State]",
     "entity_type": "Morphology",
     "state": "determined",
     "constraints": [
-      "[Morphology: Base] → [Category: Action]"
+      "[State predicate] → [Category: State]"
     ],
     "properties": {
       "result": {
-        "form": "Base",
-        "verb": "report",
-        "subject": "The",
-        "object": "that I wrote is done",
-        "category": "Action",
-        "patient": "that I wrote is done",
+        "form": "State",
+        "verb": "done",
+        "subject": "The report that I wrote",
+        "object": null,
+        "category": "State",
+        "patient": "Unspecified",
         "agent": "The report"
       }
     }
   },
   {
-    "id": "p_who_7b7bb8",
+    "id": "p_who_7316d1",
     "label": "The report",
     "entity_type": "Who",
     "state": "determined",
@@ -2037,7 +2078,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_c62f34",
+    "id": "p_what_3d3065",
     "label": "that I wrote is done",
     "entity_type": "What",
     "state": "determined",
@@ -2047,7 +2088,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_ad633d",
+    "id": "p_when_7134f1",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -2057,7 +2098,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_b20112",
+    "id": "p_where_83b47a",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -2067,7 +2108,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_bdc3ac",
+    "id": "p_why_888919",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -2077,7 +2118,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_e008de",
+    "id": "p_how_24c2bb",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -2087,7 +2128,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_7a81c2",
+    "id": "p_agent_2226f4",
     "label": "The office",
     "entity_type": "Agent",
     "state": "determined",
@@ -2099,20 +2140,29 @@
     }
   },
   {
-    "id": "p_relative_clause_be2d74",
-    "label": "No modification structure found",
+    "id": "p_relative_clause_ced18c",
+    "label": "Defining clause",
     "entity_type": "RelativeClause",
     "state": "determined",
     "constraints": [
-      "No modification structure found"
+      "Defining clause"
     ],
     "properties": {
-      "decision": "Standard",
-      "result": null
+      "decision": "Essential",
+      "result": {
+        "type": "Defining",
+        "antecedent": "The office",
+        "target": "The office",
+        "clause": "I wrote the report",
+        "kind": "RelativeClause",
+        "relative_marker": "where",
+        "classification": "Essential",
+        "modifier_kind": "RelativeClause"
+      }
     }
   },
   {
-    "id": "p_morphology_af5b1a",
+    "id": "p_morphology_4dc56f",
     "label": "[Passive: be + V-en + by]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -2132,7 +2182,7 @@
     }
   },
   {
-    "id": "p_who_95f477",
+    "id": "p_who_f7ddec",
     "label": "The office",
     "entity_type": "Who",
     "state": "determined",
@@ -2142,7 +2192,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_bea574",
+    "id": "p_what_93e2de",
     "label": "quiet the office where I wrote the report",
     "entity_type": "What",
     "state": "determined",
@@ -2152,7 +2202,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_a076bd",
+    "id": "p_when_0bd770",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -2162,7 +2212,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_ce25cb",
+    "id": "p_where_8fdee9",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -2172,7 +2222,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_a1e93a",
+    "id": "p_why_c8e3bd",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -2182,7 +2232,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_bd26fd",
+    "id": "p_how_86043f",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -2192,7 +2242,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_5ab13e",
+    "id": "p_agent_492f23",
     "label": "The day",
     "entity_type": "Agent",
     "state": "determined",
@@ -2204,20 +2254,29 @@
     }
   },
   {
-    "id": "p_relative_clause_942947",
-    "label": "No modification structure found",
+    "id": "p_relative_clause_90604a",
+    "label": "Defining clause",
     "entity_type": "RelativeClause",
     "state": "determined",
     "constraints": [
-      "No modification structure found"
+      "Defining clause"
     ],
     "properties": {
-      "decision": "Standard",
-      "result": null
+      "decision": "Essential",
+      "result": {
+        "type": "Defining",
+        "antecedent": "The day",
+        "target": "The day",
+        "clause": "he succeeded",
+        "kind": "RelativeClause",
+        "relative_marker": "where",
+        "classification": "Essential",
+        "modifier_kind": "RelativeClause"
+      }
     }
   },
   {
-    "id": "p_morphology_8dea87",
+    "id": "p_morphology_8b7649",
     "label": "[Passive: be + V-en + by]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -2237,7 +2296,7 @@
     }
   },
   {
-    "id": "p_who_b8c657",
+    "id": "p_who_f24014",
     "label": "The day",
     "entity_type": "Who",
     "state": "determined",
@@ -2247,7 +2306,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_b2da8d",
+    "id": "p_what_3062d4",
     "label": "bright the day where he succeeded",
     "entity_type": "What",
     "state": "determined",
@@ -2257,7 +2316,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_041454",
+    "id": "p_when_b3a59c",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -2267,7 +2326,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_0135ff",
+    "id": "p_where_89f00f",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -2277,7 +2336,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_2cb18a",
+    "id": "p_why_38712f",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -2287,7 +2346,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_f23e86",
+    "id": "p_how_fcdf0b",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -2297,7 +2356,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_25e65e",
+    "id": "p_agent_bf6ac8",
     "label": "I",
     "entity_type": "Agent",
     "state": "determined",
@@ -2309,7 +2368,7 @@
     }
   },
   {
-    "id": "p_relative_clause_7ae7d9",
+    "id": "p_relative_clause_bd0fb8",
     "label": "No modification structure found",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -2322,7 +2381,7 @@
     }
   },
   {
-    "id": "p_morphology_e14d8f",
+    "id": "p_morphology_24d7fb",
     "label": "[Morphology: Base] → [Category: Stative]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -2342,7 +2401,7 @@
     }
   },
   {
-    "id": "p_who_00d44f",
+    "id": "p_who_d4396f",
     "label": "I",
     "entity_type": "Who",
     "state": "determined",
@@ -2352,7 +2411,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_d6f183",
+    "id": "p_what_23ee2f",
     "label": "have a car",
     "entity_type": "What",
     "state": "determined",
@@ -2362,7 +2421,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_780687",
+    "id": "p_when_844ab1",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -2372,7 +2431,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_e45b13",
+    "id": "p_where_85cb4c",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -2382,7 +2441,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_cd547a",
+    "id": "p_why_54b466",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -2392,7 +2451,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_f3170c",
+    "id": "p_how_2fd88a",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -2402,7 +2461,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_f93bf8",
+    "id": "p_agent_313ba5",
     "label": "I",
     "entity_type": "Agent",
     "state": "determined",
@@ -2414,7 +2473,7 @@
     }
   },
   {
-    "id": "p_relative_clause_89d72e",
+    "id": "p_relative_clause_a54d5c",
     "label": "No modification structure found",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -2427,7 +2486,7 @@
     }
   },
   {
-    "id": "p_morphology_5e033f",
+    "id": "p_morphology_a523db",
     "label": "[Morphology: be + V-ing] → [Category: Action]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -2447,7 +2506,7 @@
     }
   },
   {
-    "id": "p_who_923d8e",
+    "id": "p_who_c147ec",
     "label": "I",
     "entity_type": "Who",
     "state": "determined",
@@ -2457,7 +2516,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_072b23",
+    "id": "p_what_e99b80",
     "label": "am having a party",
     "entity_type": "What",
     "state": "determined",
@@ -2467,7 +2526,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_c66fca",
+    "id": "p_when_d04a02",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -2477,7 +2536,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_a17589",
+    "id": "p_where_cb11e5",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -2487,7 +2546,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_05bc44",
+    "id": "p_why_32200c",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -2497,7 +2556,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_e4dbc1",
+    "id": "p_how_5cbe75",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -2507,7 +2566,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_42307a",
+    "id": "p_agent_ae5133",
     "label": "I",
     "entity_type": "Agent",
     "state": "determined",
@@ -2519,7 +2578,7 @@
     }
   },
   {
-    "id": "p_relative_clause_fcb966",
+    "id": "p_relative_clause_fed5aa",
     "label": "No modification structure found",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -2532,7 +2591,7 @@
     }
   },
   {
-    "id": "p_morphology_eb6e9e",
+    "id": "p_morphology_c9a3c9",
     "label": "[Passive: be + V-en + by]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -2552,7 +2611,7 @@
     }
   },
   {
-    "id": "p_who_39b798",
+    "id": "p_who_f0c911",
     "label": "him",
     "entity_type": "Who",
     "state": "determined",
@@ -2562,7 +2621,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_297e98",
+    "id": "p_what_37fce5",
     "label": "told I",
     "entity_type": "What",
     "state": "determined",
@@ -2572,7 +2631,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_36764d",
+    "id": "p_when_da38aa",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -2582,7 +2641,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_012d64",
+    "id": "p_where_d92862",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -2592,7 +2651,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_c21267",
+    "id": "p_why_d2fb39",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -2602,7 +2661,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_642e7d",
+    "id": "p_how_01b564",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
@@ -2612,7 +2671,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_679a1e",
+    "id": "p_agent_0de894",
     "label": "The report",
     "entity_type": "Agent",
     "state": "determined",
@@ -2624,20 +2683,29 @@
     }
   },
   {
-    "id": "p_relative_clause_8f23b4",
-    "label": "No modification structure found",
+    "id": "p_relative_clause_56d921",
+    "label": "Manner adverb",
     "entity_type": "RelativeClause",
     "state": "determined",
     "constraints": [
-      "No modification structure found"
+      "Manner adverb"
     ],
     "properties": {
-      "decision": "Standard",
-      "result": null
+      "decision": "Supplementary",
+      "result": {
+        "type": "Supplementary",
+        "antecedent": "The report",
+        "target": "The report",
+        "clause": "quickly",
+        "kind": "Manner",
+        "action": "Complete",
+        "classification": "Supplementary",
+        "modifier_kind": "Manner"
+      }
     }
   },
   {
-    "id": "p_morphology_c0c9c6",
+    "id": "p_morphology_e79d9e",
     "label": "[Passive: be + V-en + by]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -2657,7 +2725,7 @@
     }
   },
   {
-    "id": "p_who_99a32b",
+    "id": "p_who_9ace59",
     "label": "The report",
     "entity_type": "Who",
     "state": "determined",
@@ -2667,7 +2735,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_9f15ac",
+    "id": "p_what_e250d6",
     "label": "completed the report",
     "entity_type": "What",
     "state": "determined",
@@ -2677,7 +2745,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_bdd3e1",
+    "id": "p_when_c311d9",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -2687,7 +2755,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_bc43cb",
+    "id": "p_where_8b6d06",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -2697,7 +2765,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_aacdac",
+    "id": "p_why_0d2225",
     "label": "Unspecified",
     "entity_type": "Why",
     "state": "unspecified",
@@ -2707,7 +2775,7 @@
     "properties": {}
   },
   {
-    "id": "p_how_618999",
+    "id": "p_how_181807",
     "label": "quickly",
     "entity_type": "How",
     "state": "determined",
@@ -2717,7 +2785,7 @@
     "properties": {}
   },
   {
-    "id": "p_agent_75beda",
+    "id": "p_agent_eb46d2",
     "label": "Unknown",
     "entity_type": "Agent",
     "state": "unspecified",
@@ -2729,7 +2797,7 @@
     }
   },
   {
-    "id": "p_cause_d5dc47",
+    "id": "p_cause_a863ef",
     "label": "bad luck",
     "entity_type": "Cause",
     "state": "determined",
@@ -2739,7 +2807,7 @@
     "properties": {}
   },
   {
-    "id": "p_effect_ad3f58",
+    "id": "p_effect_2c0937",
     "label": "Failed the exam",
     "entity_type": "Effect",
     "state": "determined",
@@ -2749,7 +2817,7 @@
     "properties": {}
   },
   {
-    "id": "p_relative_clause_730212",
+    "id": "p_relative_clause_39c899",
     "label": "No modification structure found",
     "entity_type": "RelativeClause",
     "state": "determined",
@@ -2762,7 +2830,7 @@
     }
   },
   {
-    "id": "p_morphology_3828ca",
+    "id": "p_morphology_48fe09",
     "label": "[Morphology: Base] → [Category: Action]",
     "entity_type": "Morphology",
     "state": "determined",
@@ -2782,7 +2850,7 @@
     }
   },
   {
-    "id": "p_who_f532d5",
+    "id": "p_who_8795c1",
     "label": "Unknown",
     "entity_type": "Who",
     "state": "determined",
@@ -2792,7 +2860,7 @@
     "properties": {}
   },
   {
-    "id": "p_what_b5ef97",
+    "id": "p_what_500211",
     "label": "failed the exam",
     "entity_type": "What",
     "state": "determined",
@@ -2802,7 +2870,7 @@
     "properties": {}
   },
   {
-    "id": "p_when_f23371",
+    "id": "p_when_476cdf",
     "label": "Unspecified",
     "entity_type": "When",
     "state": "unspecified",
@@ -2812,7 +2880,7 @@
     "properties": {}
   },
   {
-    "id": "p_where_88d6c8",
+    "id": "p_where_b766d5",
     "label": "Unspecified",
     "entity_type": "Where",
     "state": "unspecified",
@@ -2822,7 +2890,7 @@
     "properties": {}
   },
   {
-    "id": "p_why_defc12",
+    "id": "p_why_5d6ce9",
     "label": "because of bad luck",
     "entity_type": "Why",
     "state": "determined",
@@ -2832,7 +2900,234 @@
     "properties": {}
   },
   {
-    "id": "p_how_13b915",
+    "id": "p_how_8364b7",
+    "label": "Unspecified",
+    "entity_type": "How",
+    "state": "unspecified",
+    "constraints": [
+      "Stage 5 - 5W1H Synthesis"
+    ],
+    "properties": {}
+  },
+  {
+    "id": "p_agent_973d76",
+    "label": "I",
+    "entity_type": "Agent",
+    "state": "determined",
+    "constraints": [
+      "Explicit Subject Present"
+    ],
+    "properties": {
+      "decision": "Priority: Explicit Subject"
+    }
+  },
+  {
+    "id": "p_relative_clause_1f9eff",
+    "label": "Defining clause",
+    "entity_type": "RelativeClause",
+    "state": "determined",
+    "constraints": [
+      "Defining clause"
+    ],
+    "properties": {
+      "decision": "Essential",
+      "result": {
+        "type": "Defining",
+        "antecedent": "I talked to the manager",
+        "target": "manager",
+        "clause": "was frustrated with the deadline",
+        "kind": "RelativeClause",
+        "relative_marker": "who",
+        "classification": "Essential",
+        "modifier_kind": "RelativeClause"
+      }
+    }
+  },
+  {
+    "id": "p_morphology_31dd57",
+    "label": "[Passive: be + V-en + by]",
+    "entity_type": "Morphology",
+    "state": "determined",
+    "constraints": [
+      "[Passive: be + V-en + by]"
+    ],
+    "properties": {
+      "result": {
+        "form": "Passive",
+        "verb": "frustrated",
+        "actor": "Unknown",
+        "receiver": "I talked to the manager who",
+        "category": "Action",
+        "patient": "I talked to the manager who",
+        "agent": "I"
+      }
+    }
+  },
+  {
+    "id": "p_who_8ebb72",
+    "label": "I",
+    "entity_type": "Who",
+    "state": "determined",
+    "constraints": [
+      "Stage 5 - 5W1H Synthesis"
+    ],
+    "properties": {}
+  },
+  {
+    "id": "p_what_b3e814",
+    "label": "frustrated I talked to the manager who",
+    "entity_type": "What",
+    "state": "determined",
+    "constraints": [
+      "Stage 5 - 5W1H Synthesis"
+    ],
+    "properties": {}
+  },
+  {
+    "id": "p_when_0b5c81",
+    "label": "Unspecified",
+    "entity_type": "When",
+    "state": "unspecified",
+    "constraints": [
+      "Stage 5 - 5W1H Synthesis"
+    ],
+    "properties": {}
+  },
+  {
+    "id": "p_where_046993",
+    "label": "Unspecified",
+    "entity_type": "Where",
+    "state": "unspecified",
+    "constraints": [
+      "Stage 5 - 5W1H Synthesis"
+    ],
+    "properties": {}
+  },
+  {
+    "id": "p_why_899624",
+    "label": "Unspecified",
+    "entity_type": "Why",
+    "state": "unspecified",
+    "constraints": [
+      "Stage 5 - 5W1H Synthesis"
+    ],
+    "properties": {}
+  },
+  {
+    "id": "p_how_70adc7",
+    "label": "Unspecified",
+    "entity_type": "How",
+    "state": "unspecified",
+    "constraints": [
+      "Stage 5 - 5W1H Synthesis"
+    ],
+    "properties": {}
+  },
+  {
+    "id": "p_agent_ab6ff8",
+    "label": "You",
+    "entity_type": "Agent",
+    "state": "determined",
+    "constraints": [
+      "Imperative / Direct Directive"
+    ],
+    "properties": {
+      "decision": "Priority: Listener Address"
+    }
+  },
+  {
+    "id": "p_relative_clause_75e032",
+    "label": "Adjectival modifier",
+    "entity_type": "RelativeClause",
+    "state": "determined",
+    "constraints": [
+      "Adjectival modifier"
+    ],
+    "properties": {
+      "decision": "Supplementary",
+      "result": {
+        "type": "Supplementary",
+        "antecedent": "report",
+        "target": "report",
+        "clause": "long",
+        "kind": "Adjective",
+        "classification": "Supplementary",
+        "modifier_kind": "Adjective"
+      }
+    }
+  },
+  {
+    "id": "p_morphology_b6b5f3",
+    "label": "[Morphology: Base] → [Category: Action]",
+    "entity_type": "Morphology",
+    "state": "determined",
+    "constraints": [
+      "[Morphology: Base] → [Category: Action]"
+    ],
+    "properties": {
+      "result": {
+        "form": "Base",
+        "verb": "review",
+        "subject": "Please",
+        "object": "the long report",
+        "category": "Action",
+        "patient": "the long report",
+        "agent": "You"
+      }
+    }
+  },
+  {
+    "id": "p_who_ab7d94",
+    "label": "You",
+    "entity_type": "Who",
+    "state": "determined",
+    "constraints": [
+      "Stage 5 - 5W1H Synthesis"
+    ],
+    "properties": {}
+  },
+  {
+    "id": "p_what_f7f460",
+    "label": "review the long report",
+    "entity_type": "What",
+    "state": "determined",
+    "constraints": [
+      "Stage 5 - 5W1H Synthesis"
+    ],
+    "properties": {}
+  },
+  {
+    "id": "p_when_8d6d71",
+    "label": "Unspecified",
+    "entity_type": "When",
+    "state": "unspecified",
+    "constraints": [
+      "Stage 5 - 5W1H Synthesis"
+    ],
+    "properties": {}
+  },
+  {
+    "id": "p_where_77f658",
+    "label": "Unspecified",
+    "entity_type": "Where",
+    "state": "unspecified",
+    "constraints": [
+      "Stage 5 - 5W1H Synthesis"
+    ],
+    "properties": {}
+  },
+  {
+    "id": "p_why_8e7de4",
+    "label": "Unspecified",
+    "entity_type": "Why",
+    "state": "unspecified",
+    "constraints": [
+      "Stage 5 - 5W1H Synthesis"
+    ],
+    "properties": {}
+  },
+  {
+    "id": "p_how_49cb28",
     "label": "Unspecified",
     "entity_type": "How",
     "state": "unspecified",
