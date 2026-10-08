@@ -9,8 +9,8 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from src.factory import ParticleFactory
 
-LOCAL_FILE = "log.json"  # 保存先のローカルファイル名
-PARTICLES_FILE = "particles.json"  # 粒子群の保存先
+LOCAL_FILE = PROJECT_ROOT / "log.json"
+PARTICLES_FILE = PROJECT_ROOT / "particles.json"
 
 
 def main():
@@ -20,7 +20,7 @@ def main():
     with open(LOCAL_FILE, encoding="utf-8") as f:
         log_data = json.load(f)
 
-    # 2. 粒子群を生成し、Stage 3 の構造に粒子IDを反映
+    # 2. 粒子群を生成し、Stage 2 の構造に粒子IDを反映
     particles = ParticleFactory.from_log_json(log_data)
 
     # 3. IDを反映したログを保存

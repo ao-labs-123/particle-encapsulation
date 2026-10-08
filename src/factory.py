@@ -5,6 +5,13 @@ from typing import List, Dict, Any
 from src.particle import Particle
 
 class ParticleFactory:
+    @staticmethod
+    def _particle_id(item: Dict[str, Any], item_index: int, entity_type: str) -> str:
+        identity = item.get("timestamp") or item.get("input") or "entry"
+        stable_key = f"{identity}:{item_index}:{entity_type}"
+        suffix = uuid.uuid5(uuid.NAMESPACE_URL, stable_key).hex[:12]
+        return f"p_{entity_type.lower()}_{suffix}"
+
     @classmethod
     def from_log_json(cls, log_data: List[Dict[str, Any]]) -> List[Particle]:
         """
@@ -16,7 +23,7 @@ class ParticleFactory:
             # -------------------------------------------------------------
             # 1. Agent (主語) 粒子の抽出 (Stage1から)
             # -------------------------------------------------------------
-        for item in log_data:
+        for item_index, item in enumerate(log_data):
             stage1 = item.get("stage1") or {}
             stage2 = item.get("stage2") or {}
 
@@ -34,7 +41,7 @@ class ParticleFactory:
                     if str(agent_label).strip().casefold() in {"unknown", "unspecified"}
                     else "determined"
                 )
-                agent_particle_id = f"p_agent_{uuid.uuid4().hex[:6]}"
+                agent_particle_id = cls._particle_id(item, item_index, "Agent")
                 particles.append(
                     Particle(
                         id=agent_particle_id,
@@ -69,7 +76,7 @@ class ParticleFactory:
 
                 event = structure.get("event")
                 if isinstance(event, dict):
-                    event_particle_id = f"p_event_{uuid.uuid4().hex[:6]}"
+                    event_particle_id = cls._particle_id(item, item_index, "Event")
                     structure["event_particle_id"] = event_particle_id
                     event_label = event.get("verb") or event.get("state") or event.get("category")
                     particles.append(
@@ -82,13 +89,25 @@ class ParticleFactory:
                             properties={"event": event}
                         )
                     )
+                elif has_contextual_relation and event:
+                    event_particle_id = cls._particle_id(item, item_index, "Event")
+                    structure["event_particle_id"] = event_particle_id
+                    particles.append(
+                        Particle(
+                            id=event_particle_id,
+                            label=str(event),
+                            entity_type="Event",
+                            state="determined",
+                            constraints=[stage2.get("process", "event")]
+                        )
+                    )
 
                 for field, entity_type in (("concession", "Concession"), ("outcome", "Outcome")):
                     label = structure.get(field)
                     if label:
                         particles.append(
                             Particle(
-                                id=f"p_{field}_{uuid.uuid4().hex[:6]}",
+                                id=cls._particle_id(item, item_index, entity_type),
                                 label=str(label),
                                 entity_type=entity_type,
                                 state="determined",
@@ -98,7 +117,7 @@ class ParticleFactory:
 
                 # Cause (原因) 粒子の生成
                 if "cause" in structure:
-                    cause_particle_id = f"p_cause_{uuid.uuid4().hex[:6]}"
+                    cause_particle_id = cls._particle_id(item, item_index, "Cause")
                     structure["cause_particle_id"] = cause_particle_id
                     particles.append(
                         Particle(
@@ -111,14 +130,11 @@ class ParticleFactory:
                     )
             
                 # Cause/Effect と Temporal/Manner の event を結果粒子として生成
-                effect_label = structure.get("event") if has_contextual_relation else structure.get("effect")
+                effect_label = None if has_contextual_relation else structure.get("effect")
 
                 if effect_label:
-                    effect_particle_id = f"p_effect_{uuid.uuid4().hex[:6]}"
-                    if has_contextual_relation:
-                        structure["event_particle_id"] = effect_particle_id
-                    else:
-                        structure["effect_particle_id"] = effect_particle_id
+                    effect_particle_id = cls._particle_id(item, item_index, "Effect")
+                    structure["effect_particle_id"] = effect_particle_id
                     particles.append(
                         Particle(
                             id=effect_particle_id,
@@ -130,7 +146,7 @@ class ParticleFactory:
                     )
 
                 if has_contextual_relation and structure.get("context"):
-                    context_particle_id = f"p_{relation.lower()}_{uuid.uuid4().hex[:6]}"
+                    context_particle_id = cls._particle_id(item, item_index, relation)
                     structure["context_particle_id"] = context_particle_id
                     particles.append(
                         Particle(
@@ -155,9 +171,19 @@ class ParticleFactory:
                 stage3_result = stage3.get("result") or stage3.get("structure")
                 particles.append(
                     Particle(
-                        id=f"p_relative_clause_{uuid.uuid4().hex[:6]}",
+                        id=cls._particle_id(
+                            item,
+                            item_index,
+                            "RelativeClause"
+                            if stage3_process in {"Defining clause", "Non-defining clause"}
+                            else "Modifier"
+                        ),
                         label=stage3_process,
-                        entity_type="RelativeClause",
+                        entity_type=(
+                            "RelativeClause"
+                            if stage3_process in {"Defining clause", "Non-defining clause"}
+                            else "Modifier"
+                        ),
                         state="determined",
                         constraints=[stage3_process],
                         properties={
@@ -175,7 +201,7 @@ class ParticleFactory:
             if morphology:
                 particles.append(
                     Particle(
-                        id=f"p_morphology_{uuid.uuid4().hex[:6]}",
+                        id=cls._particle_id(item, item_index, "Morphology"),
                         label=morphology,
                         entity_type="Morphology",
                         state="determined",
@@ -194,7 +220,7 @@ class ParticleFactory:
                 state = "unspecified" if label.strip().casefold() == "unspecified" else "determined"
                 particles.append(
                     Particle(
-                        id=f"p_{dimension}_{uuid.uuid4().hex[:6]}",
+                        id=cls._particle_id(item, item_index, dimension.capitalize()),
                         label=label,
                         entity_type=dimension.capitalize(),
                         state=state,
