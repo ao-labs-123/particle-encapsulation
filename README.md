@@ -76,16 +76,33 @@ The engine will parse the input log and export the encapsulated particle cloud i
 ```json
 [
   {
-    "id": "p_agent_f06dbc",
-    "label": "I",
+    "id": "p_agent_aac8eb0fdb9c",
+    "label": "He",
     "entity_type": "Agent",
-    "state": "determined"
+    "state": "determined",
+    "constraints": [
+      "Explicit Subject Present"
+    ],
+    "properties": {
+      "decision": "Priority: Explicit Subject"
+    }
   },
   {
-    "id": "p_cause_9c0b4a",
-    "label": "you helped",
-    "entity_type": "Cause",
-    "state": "determined"
+    "id": "p_event_3edbd3958741",
+    "label": "succeeded",
+    "entity_type": "Event",
+    "state": "determined",
+    "constraints": [
+      "Causal Marker: because; Event: Action"
+    ],
+    "properties": {
+      "event": {
+        "category": "Action",
+        "verb": "succeeded",
+        "actor": "He",
+        "patient": null
+      }
+    }
   }
 ]
 
@@ -93,7 +110,7 @@ The engine will parse the input log and export the encapsulated particle cloud i
 
 ## Repository Structure
 
-```repository
+```text
 
 particle-encapsulation/
 ├── README.md               # Project documentation
