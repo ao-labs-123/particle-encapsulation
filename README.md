@@ -73,7 +73,7 @@ python main.py
 
 The engine will parse the input log and export the encapsulated particle cloud into ⁠particles.json⁠.
 
-```particles.json
+```json
 [
   {
     "id": "p_agent_f06dbc",
