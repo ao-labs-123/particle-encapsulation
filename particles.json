@@ -353,7 +353,7 @@
     "id": "p_agent_d6173fb42f11",
     "label": "He/She/They",
     "entity_type": "Agent",
-    "state": "determined",
+    "state": "unspecified",
     "constraints": [
       "Null Subject + Evidential / Attribution Marker"
     ],
@@ -426,7 +426,7 @@
     "id": "p_who_c260e39453a0",
     "label": "He/She/They",
     "entity_type": "Who",
-    "state": "determined",
+    "state": "unspecified",
     "constraints": [
       "Stage 5 - 5W1H Synthesis"
     ],
@@ -535,7 +535,7 @@
     "id": "p_who_3d673ba83ca0",
     "label": "Unknown",
     "entity_type": "Who",
-    "state": "determined",
+    "state": "unspecified",
     "constraints": [
       "Stage 5 - 5W1H Synthesis"
     ],
@@ -991,7 +991,7 @@
     "id": "p_who_4fa1bfc2df57",
     "label": "Unknown",
     "entity_type": "Who",
-    "state": "determined",
+    "state": "unspecified",
     "constraints": [
       "Stage 5 - 5W1H Synthesis"
     ],
@@ -1120,7 +1120,7 @@
     "id": "p_who_2d69cff0b35a",
     "label": "Unknown",
     "entity_type": "Who",
-    "state": "determined",
+    "state": "unspecified",
     "constraints": [
       "Stage 5 - 5W1H Synthesis"
     ],
@@ -1229,7 +1229,7 @@
     "id": "p_who_5c97c10b025b",
     "label": "Unknown",
     "entity_type": "Who",
-    "state": "determined",
+    "state": "unspecified",
     "constraints": [
       "Stage 5 - 5W1H Synthesis"
     ],
@@ -1338,7 +1338,7 @@
     "id": "p_who_aa6663d6401e",
     "label": "Unknown",
     "entity_type": "Who",
-    "state": "determined",
+    "state": "unspecified",
     "constraints": [
       "Stage 5 - 5W1H Synthesis"
     ],
@@ -1447,7 +1447,7 @@
     "id": "p_who_18cd2bd1fde6",
     "label": "Unknown",
     "entity_type": "Who",
-    "state": "determined",
+    "state": "unspecified",
     "constraints": [
       "Stage 5 - 5W1H Synthesis"
     ],
@@ -3090,7 +3090,7 @@
     "id": "p_who_4cd460add97e",
     "label": "Unknown",
     "entity_type": "Who",
-    "state": "determined",
+    "state": "unspecified",
     "constraints": [
       "Stage 5 - 5W1H Synthesis"
     ],

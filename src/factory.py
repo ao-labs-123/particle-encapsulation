@@ -6,6 +6,17 @@ from src.particle import Particle
 
 class ParticleFactory:
     @staticmethod
+    def _is_unspecified(value: Any) -> bool:
+        return str(value).strip().casefold() in {
+            "unknown",
+            "unspecified",
+            "undetermined",
+            "unresolved",
+            "n/a",
+            "he/she/they",
+        }
+
+    @staticmethod
     def _particle_id(item: Dict[str, Any], item_index: int, entity_type: str) -> str:
         identity = item.get("timestamp") or item.get("input") or "entry"
         stable_key = f"{identity}:{item_index}:{entity_type}"
@@ -36,11 +47,7 @@ class ParticleFactory:
             agent_particle_id = None
         
             if agent_label:
-                agent_state = (
-                    "unspecified"
-                    if str(agent_label).strip().casefold() in {"unknown", "unspecified"}
-                    else "determined"
-                )
+                agent_state = "unspecified" if cls._is_unspecified(agent_label) else "determined"
                 agent_particle_id = cls._particle_id(item, item_index, "Agent")
                 particles.append(
                     Particle(
@@ -217,7 +224,7 @@ class ParticleFactory:
             frame = stage5.get("frame") or stage5
             for dimension in ("who", "what", "when", "where", "why", "how"):
                 label = str(frame.get(dimension) or "Unspecified")
-                state = "unspecified" if label.strip().casefold() == "unspecified" else "determined"
+                state = "unspecified" if cls._is_unspecified(label) else "determined"
                 particles.append(
                     Particle(
                         id=cls._particle_id(item, item_index, dimension.capitalize()),
