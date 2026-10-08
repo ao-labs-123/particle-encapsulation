@@ -6,7 +6,7 @@ from src.particle import Particle
 
 class ParticleFactory:
     @classmethod
-    def from_log_json(cls, log_data: Dict[str, Any]) -> List[Particle]:
+    def from_log_json(cls, log_data: List[Dict[str, Any]]) -> List[Particle]:
         """
         log.json (辞書型データ) を受け取り、
         解析結果に対応する Particle オブジェクトのリストを生成して返す
@@ -67,6 +67,35 @@ class ParticleFactory:
                 elif agent_particle_id:
                     structure["agent_particle_id"] = agent_particle_id
 
+                event = structure.get("event")
+                if isinstance(event, dict):
+                    event_particle_id = f"p_event_{uuid.uuid4().hex[:6]}"
+                    structure["event_particle_id"] = event_particle_id
+                    event_label = event.get("verb") or event.get("state") or event.get("category")
+                    particles.append(
+                        Particle(
+                            id=event_particle_id,
+                            label=str(event_label or "Unspecified"),
+                            entity_type="Event",
+                            state="unspecified" if not event_label else "determined",
+                            constraints=[stage2.get("process", "event")],
+                            properties={"event": event}
+                        )
+                    )
+
+                for field, entity_type in (("concession", "Concession"), ("outcome", "Outcome")):
+                    label = structure.get(field)
+                    if label:
+                        particles.append(
+                            Particle(
+                                id=f"p_{field}_{uuid.uuid4().hex[:6]}",
+                                label=str(label),
+                                entity_type=entity_type,
+                                state="determined",
+                                constraints=[stage2.get("process", "stage2_relation")]
+                            )
+                        )
+
                 # Cause (原因) 粒子の生成
                 if "cause" in structure:
                     cause_particle_id = f"p_cause_{uuid.uuid4().hex[:6]}"
@@ -122,7 +151,7 @@ class ParticleFactory:
             # -------------------------------------------------------------
             stage3 = item.get("stage3") or {}
             stage3_process = stage3.get("process")
-            if stage3_process and stage3_process != "Standard":
+            if stage3_process and stage3_process not in {"Standard", "No modification structure found"}:
                 stage3_result = stage3.get("result") or stage3.get("structure")
                 particles.append(
                     Particle(

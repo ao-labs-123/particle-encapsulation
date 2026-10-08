@@ -1,6 +1,5 @@
 import json
 import sys
-import urllib.request
 from dataclasses import asdict
 from pathlib import Path
 
@@ -10,19 +9,16 @@ if str(PROJECT_ROOT) not in sys.path:
 
 from src.factory import ParticleFactory
 
-# テスト用の log.json の Raw URL
-URL = "https://raw.githubusercontent.com/ao-labs-123/input-parser/main/data/log.json"
 LOCAL_FILE = "log.json"  # 保存先のローカルファイル名
 PARTICLES_FILE = "particles.json"  # 粒子群の保存先
 
 
 def main():
-    print("Fetching log.json from GitHub...")
+    print(f"Loading {LOCAL_FILE}...")
 
-    # 1. GitHubからデータを取得
-    with urllib.request.urlopen(URL) as response:
-        raw_data = response.read().decode("utf-8")
-        log_data = json.loads(raw_data)
+    # 1. ローカルの解析ログを読み込む
+    with open(LOCAL_FILE, encoding="utf-8") as f:
+        log_data = json.load(f)
 
     # 2. 粒子群を生成し、Stage 3 の構造に粒子IDを反映
     particles = ParticleFactory.from_log_json(log_data)
