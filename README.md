@@ -1,24 +1,10 @@
-# Micro—ACT-R (tentative)
-> "ACT-R at a Micro-Scale"
-## What makes this different from standard ACT-R?
+ ## CCA Architecture
 
-Standard ACT-R operates on a macro level with production rules. This project zooms into the micro-level of cognitive processing.
-
-## Overview
-**Micro–ACT-R operates through a clear, fully explainable pipeline from input to reasoning and execution:**
-
-First, text is acquired from the **Environment** and parsed in the **Input** stage into individual cognitive **particles** (Particle Encapsulation).
-
-Next, during **Reasoning**, the system uses **Topological Mapping** to define relationships between particles and assigns explicit spatial coordinates via **Spatial Allocation**. These coordinates are logged directly into **Storage**.
-
-The system then validates consistency between the category of knowledge and past experiences **(Match & Select)**, selects the appropriate action based on this consistency **(Execution)**, and finally produces the **Output**.
-
-## Micro-ACT-R Pipeline Architecture
-<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/10de3e8f-6ca9-45a6-b8f8-269ce818a3f5" />
 
 1. [input-parser](https://github.com/ao-labs-123/input-parser)
 2. [particle-encapsulation](https://github.com/ao-labs-123/particle-encapsulation)※Current Position
 3. [topological-mapper](https://github.com/ao-labs-123/topological-mapper)
+4. [spatial-allocation](https://github.com/ao-labs-123/spatial-allocation)
 
 # Current Phase:Particle Encapsulation
 **Deterministic engine that encapsulates structured context logs into algebraic particle objects.⁠**
