@@ -1,12 +1,4 @@
- ## CCA Architecture
-
-
-1. [input-parser](https://github.com/ao-labs-123/input-parser)
-2. [particle-encapsulation](https://github.com/ao-labs-123/particle-encapsulation)※Current Position
-3. [topological-mapper](https://github.com/ao-labs-123/topological-mapper)
-4. [spatial-allocation](https://github.com/ao-labs-123/spatial-allocation)
-
-# Current Phase:Particle Encapsulation
+ # Particle Encapsulation
 **Deterministic engine that encapsulates structured context logs into algebraic particle objects.⁠**
 
 ![alt text](image-1.jpeg)
